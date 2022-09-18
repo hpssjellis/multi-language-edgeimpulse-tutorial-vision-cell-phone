@@ -2,7 +2,7 @@
 ### Vanilla Javascript Lightning Talk Pech Kucha Markdown HTML README.md
 
 
-##### version 0.6.4-85
+##### version 1.0.1-86
 
 Fork this repo, fill in your markdown and <html> for the 15 slides (max 20 slides), record your presentation and save it as ```recorded-talk.m4a``` (or change the code to reflect the new name.)
  
@@ -31,27 +31,14 @@ Number of Slides: <input type="text" id="myCountLinks" size="6" value="15" >, Se
 <div id="myStick"  style=" position:sticky; top:30px; display:inline; ">
  
  <input type=button value="Start-No-Sound" onclick="{
-   document.getElementById('myStick').style.display = 'none';                                                 
-   xSlide  = document.getElementById('myCountLinks').value; 
-   myMainNum = document.getElementById('myCountMax').value;    
-   myAudio01.pause();
-   myAudio01.currentTime = 0;  
-   myIndex = 0;  
-   clearInterval(myLooper);  
-   myCountUp = -1;
+   mySetup()
    carousel();  
 }">
  
 <input type=button value="Start-Pre-Recorded" onclick="{                                                        
-   document.getElementById('myStick').style.display = 'none';   
-   xSlide  = document.getElementById('myCountLinks').value; 
-   myMainNum = document.getElementById('myCountMax').value;  
-   myAudio01.pause();
-   myAudio01.currentTime = 0;                                                
+   mySetup()                                             
    myAudio01 = new Audio('recorded-talk.m4a');
    myAudio01.play(); 
-   myIndex = 0;  
-   clearInterval(myLooper);  
    carousel();                                                
 }">  
  
@@ -280,6 +267,18 @@ A few Javascript abilites do not work, such as hiding the code. So all the Javas
  let myAudio01 = new Audio();
  
 ;
+ 
+function mySetup(){
+   document.getElementById('myStick').style.display = 'none';                                                 
+   xSlide  = document.getElementById('myCountLinks').value; 
+   myMainNum = document.getElementById('myCountMax').value;    
+   myAudio01.pause();
+   myAudio01.currentTime = 0;  
+   myIndex = 0;  
+   clearInterval(myLooper);  
+   myCountUp = -1;
+} 
+ 
 function carousel() {
   clearInterval(myCounting);
   myCountUp = -1;
