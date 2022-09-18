@@ -173,7 +173,8 @@ List of photos while making page
 <img src="" title="" width=400 />
 
 
-<img src="" title="" width=400 />
+
+<img src="https://user-images.githubusercontent.com/5605614/190932155-952cbfa1-9609-4482-9e52-61fee6be4833.png" title="Data and labels" width=400 />
 
 
 <img src="" title="" width=400 />
@@ -184,6 +185,40 @@ List of photos while making page
 
 <img src="" title="" width=400 />
 
+<img src="" title="" width=400 />
+ 
+ 
+ 
+<img src="" title="" width=400 />
+ 
+ 
+ 
+ 
+<img src="" title="" width=400 />
+ 
+ 
+ 
+ 
+<img src="" title="" width=400 />
+ 
+ 
+ 
+ 
+<img src="" title="" width=400 />
+ 
+ 
+ 
+ 
+<img src="" title="" width=400 />
+ 
+ 
+ 
+ 
+<img src="" title="" width=400 />
+ 
+ 
+ 
+ 
 <img src="" title="" width=400 />
 
 
