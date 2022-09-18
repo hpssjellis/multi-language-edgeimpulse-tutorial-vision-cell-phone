@@ -161,16 +161,19 @@ List of photos while making page
 
 
 
-<img src="" title="" width=400 />
+<img src="qr-code-loads.jpg" title="QR code loads" width=300 />
+
+ 
+<img src="unlock.jpg" title="Permissions" width=300 />
+
+ 
+ 
+<img src="label-unknown.jpg" title="Unknown" width=300 />
 
 
-<img src="" title="" width=400 />
 
 
-<img src="" title="" width=400 />
-
-
-<img src="" title="" width=400 />
+<img src="label-pen.jpg" title="Pen" width=300 />
 
 
 
