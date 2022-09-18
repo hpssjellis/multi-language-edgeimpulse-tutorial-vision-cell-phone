@@ -138,11 +138,11 @@ List of photos while making page
 
 
 
-<img src="" title="" width=400 />
+<img src="https://user-images.githubusercontent.com/5605614/190931666-39a92ca7-e8d6-435c-86ac-ef1ed825008d.png" title="Create new project" width=400 />
 
 
 
-<img src="" title="" width=400 />
+<img src="https://user-images.githubusercontent.com/5605614/190931807-c63b069a-307e-454b-998e-839cde729637.png" title="Check Dashboard" width=400 />
 
 
 
