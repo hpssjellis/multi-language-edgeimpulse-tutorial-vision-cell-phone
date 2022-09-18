@@ -2,7 +2,7 @@
 ### Vanilla Javascript Lightning Talk Pech Kucha Markdown HTML README.md
 
 
-##### version 1.1.0-93
+##### version 1.1.1-94
 
 Fork this repo, fill in your markdown and <html> for the 15 slides (max 20 slides), record your presentation and save it as ```recorded-talk.m4a``` (or change the code to reflect the new name.)
  
@@ -128,6 +128,41 @@ Show how to do images and links. Note: To get the url just paste an image right 
 
 
 #### 3
+
+
+List of photos while making page
+
+
+
+<img src="https://user-images.githubusercontent.com/5605614/190931142-55689c3c-124b-4558-ba9c-d025ef148461.png" title="EdgeImpulse login or setup" width=400 />
+
+
+
+<img src="" title="" width=400 />
+
+
+
+<img src="" title="" width=400 />
+
+
+
+<img src="" title="" width=400 />
+
+
+
+
+
+<img src="" title="" width=400 />
+
+
+
+
+
+
+<img src="" title="" width=400 />
+
+
+
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
