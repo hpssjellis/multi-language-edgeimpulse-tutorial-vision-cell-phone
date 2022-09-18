@@ -2,16 +2,16 @@
 ### Vanilla Javascript Lightning Talk Pech Kucha Markdown HTML README.md
 
 
-##### version 1.0.3-87
+##### version 1.0.3-88
 
 Fork this repo, fill in your markdown and <html> for the 15 slides (max 20 slides), record your presentation and save it as ```recorded-talk.m4a``` (or change the code to reflect the new name.)
  
  Setup gitPages --> settings-->pages-->none to master-->save--> copy the link and replace below.
 
-Demo of this Github Markdown can be viewed at this GitPages site (replace this link with your Gitpages link) https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/
+Demo of this Github Markdown can be viewed at this GitPages site (replace this link with your Gitpages link) [https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/](https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/)
 
 
-This Github Repository (replace this link with your Repository Link) https://github.com/hpssjellis/multi-language-edgeimpulse-tutorial-vision-cell-phone
+This Github Repository (replace this link with your Repository Link) [https://github.com/hpssjellis/multi-language-edgeimpulse-tutorial-vision-cell-phone](https://github.com/hpssjellis/multi-language-edgeimpulse-tutorial-vision-cell-phone)
 
 
 Number of Slides: <input type="text" id="myCountLinks" size="6" value="15" >, Seconds for each Slide: <input type="text" id="myCountMax" size="6" value="2,4,3,5" >
@@ -261,7 +261,7 @@ A few Javascript abilites do not work, such as hiding the code. So all the Javas
  let myIndex = 1;
  let myLooper = 0;
  let myCounting = 0;
- let myMainNum = 2,3,4,5,2,3,4,5;  
+ let myMainNum = '2,3,4,5,2,3,4,5';  
  let myMainNumLast = 2;
  let myCountUp = 0;
  let xSlide = 3;
