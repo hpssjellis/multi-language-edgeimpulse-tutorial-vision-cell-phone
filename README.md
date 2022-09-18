@@ -2,7 +2,7 @@
 ### Vanilla Javascript Lightning Talk Pech Kucha Markdown HTML README.md
 
 
-##### version 1.0.2-86
+##### version 1.0.3-87
 
 Fork this repo, fill in your markdown and <html> for the 15 slides (max 20 slides), record your presentation and save it as ```recorded-talk.m4a``` (or change the code to reflect the new name.)
  
@@ -261,7 +261,8 @@ A few Javascript abilites do not work, such as hiding the code. So all the Javas
  let myIndex = 1;
  let myLooper = 0;
  let myCounting = 0;
- let myMainNum = 20;   
+ let myMainNum = 2,3,4,5,2,3,4,5;  
+ let myMainNumLast = 2;
  let myCountUp = 0;
  let xSlide = 3;
  let myAudio01 = new Audio();
@@ -291,21 +292,22 @@ function carousel() {
   window.location.href='#'+myIndex;
   myCountDown();
   myCounting = setInterval(myCountDown, 1000);
-  myLooper = setTimeout(carousel, myMainNum*1000); 
+  if (myMainNum[myCounting].isInteger() ) {myMainNumLast = myMainNum[myCounting] }  // check if integer or use last one
+  myLooper = setTimeout(carousel, myMainNumLast*1000); 
 }
   
 function myCountDown(){
   myCountUp++;
-  if (myCountUp >= myMainNum ) {
-    myCountUp = myMainNum;                              
+  if (myCountUp >= myMainNumLast ) {
+    myCountUp = myMainNumLast];                              
   }
-  if (myIndex >= xSlide && myMainNum == myCountUp){ 
+  if (myIndex >= xSlide && myMainNumLast == myCountUp){ 
      document.getElementById("myNumSlides").innerHTML = `&nbsp;&nbsp;&nbsp; Slide ${myIndex} of ${xSlide} slides. ALL DONE <input type=button value="Show"  style="height:25px; " onclick="{document.getElementById('myStick').style.display = 'inline'; }"> `;
      clearInterval(myCounting);             
      clearInterval(myLooper);  
   }
   else {    
-     document.getElementById("myNumSlides").innerHTML = `&nbsp;&nbsp;&nbsp; Slide ${myIndex} of ${xSlide} slides. ${myMainNum-myCountUp} seconds remaining <input type=button value="Show" style="height:25px; " onclick="{document.getElementById('myStick').style.display = 'inline'; }"> `;
+     document.getElementById("myNumSlides").innerHTML = `&nbsp;&nbsp;&nbsp; Slide ${myIndex} of ${xSlide} slides. ${myMainNumLast-myCountUp} seconds remaining <input type=button value="Show" style="height:25px; " onclick="{document.getElementById('myStick').style.display = 'inline'; }"> `;
   }
 }
 ;
