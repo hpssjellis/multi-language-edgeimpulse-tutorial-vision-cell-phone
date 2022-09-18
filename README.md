@@ -2,7 +2,7 @@
 ### Vanilla Javascript Lightning Talk Pech Kucha Markdown HTML README.md
 
 
-##### version 1.0.1-86
+##### version 1.0.2-86
 
 Fork this repo, fill in your markdown and <html> for the 15 slides (max 20 slides), record your presentation and save it as ```recorded-talk.m4a``` (or change the code to reflect the new name.)
  
@@ -14,7 +14,7 @@ Demo of this Github Markdown can be viewed at this GitPages site (replace this l
 This Github Repository (replace this link with your Repository Link) https://github.com/hpssjellis/multi-language-edgeimpulse-tutorial-vision-cell-phone
 
 
-Number of Slides: <input type="text" id="myCountLinks" size="6" value="15" >, Seconds per Slide: <input type="text" id="myCountMax" size="6" value="20" >
+Number of Slides: <input type="text" id="myCountLinks" size="6" value="15" >, Seconds for each Slide: <input type="text" id="myCountMax" size="6" value="2,4,3,5" >
 
 <div id="myNumSlides" style=" position:sticky; top:0px; left:20px; height:25px; "> ...</div>  <br>
 
@@ -271,7 +271,9 @@ A few Javascript abilites do not work, such as hiding the code. So all the Javas
 function mySetup(){
    document.getElementById('myStick').style.display = 'none';                                                 
    xSlide  = document.getElementById('myCountLinks').value; 
-   myMainNum = document.getElementById('myCountMax').value;    
+   myMainNum = document.getElementById('myCountMax').value.split(','); 
+   console.log('myMainNum')
+   console.log(myMainNum)
    myAudio01.pause();
    myAudio01.currentTime = 0;  
    myIndex = 0;  
