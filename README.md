@@ -2,7 +2,7 @@
 ### Vanilla Javascript Lightning Talk Pech Kucha Markdown HTML README.md
 
 
-##### version 1.0.3-88
+##### version 1.0.3-89
 
 Fork this repo, fill in your markdown and <html> for the 15 slides (max 20 slides), record your presentation and save it as ```recorded-talk.m4a``` (or change the code to reflect the new name.)
  
@@ -299,7 +299,7 @@ function carousel() {
 function myCountDown(){
   myCountUp++;
   if (myCountUp >= myMainNumLast ) {
-    myCountUp = myMainNumLast];                              
+    myCountUp = myMainNumLast;                              
   }
   if (myIndex >= xSlide && myMainNumLast == myCountUp){ 
      document.getElementById("myNumSlides").innerHTML = `&nbsp;&nbsp;&nbsp; Slide ${myIndex} of ${xSlide} slides. ALL DONE <input type=button value="Show"  style="height:25px; " onclick="{document.getElementById('myStick').style.display = 'inline'; }"> `;
