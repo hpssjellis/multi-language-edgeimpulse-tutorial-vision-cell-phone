@@ -159,21 +159,20 @@ List of photos while making page
 
 
 
+<img src="https://user-images.githubusercontent.com/5605614/190932524-d2c92bff-5ee6-4b2d-bf19-d4c423a584b9.png" title="QR code loads" width=300 />
 
 
-<img src="qr-code-loads.jpg" title="QR code loads" width=300 />
+
+<img src="https://user-images.githubusercontent.com/5605614/190932534-3966d36a-18fb-4004-aa35-6c529a520765.png" title="Permissions" width=300 />
+
 
  
-<img src="unlock.jpg" title="Permissions" width=300 />
-
- 
- 
-<img src="label-unknown.jpg" title="Unknown" width=300 />
+<img src="https://user-images.githubusercontent.com/5605614/190932549-b12f03d2-0416-4d1f-9966-ea1df91285b2.png" title="Unknown" width=300 />
 
 
 
 
-<img src="label-pen.jpg" title="Pen" width=300 />
+<img src="https://user-images.githubusercontent.com/5605614/190932565-18a1cd7a-e056-4f85-805d-e19b13d1a102.png" title="Pen" width=300 />
 
 
 
