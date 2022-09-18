@@ -2,7 +2,7 @@
 ### Vanilla Javascript Lightning Talk Pech Kucha Markdown HTML README.md
 
 
-##### version 1.0.4-91
+##### version 1.0.4-92
 
 Fork this repo, fill in your markdown and <html> for the 15 slides (max 20 slides), record your presentation and save it as ```recorded-talk.m4a``` (or change the code to reflect the new name.)
  
@@ -292,7 +292,7 @@ function carousel() {
   window.location.href='#'+myIndex;
   myCountDown();
   myCounting = setInterval(myCountDown, 1000);
-  if (Number.isInteger(parseInt(document.getElementById('myIn').value)) ) {myMainNumLast = parseInt(myMainNum[myCounting]) }  // check if integer or use last one
+  if (Number.isInteger( parseInt(myMainNum[myCounting]) ) ) {myMainNumLast = parseInt(myMainNum[myCounting]) }  // check if integer or use last one
   myLooper = setTimeout(carousel, myMainNumLast*1000); 
 }
   
