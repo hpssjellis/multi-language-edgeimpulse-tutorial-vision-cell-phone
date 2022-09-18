@@ -144,20 +144,45 @@ List of photos while making page
 
 <img src="https://user-images.githubusercontent.com/5605614/190931807-c63b069a-307e-454b-998e-839cde729637.png" title="Check Dashboard" width=400 />
 
+![image](https://user-images.githubusercontent.com/5605614/190931865-eabede2e-8e10-4117-bf73-c1fe8f2c0d21.png)
+
+
+<img src="https://user-images.githubusercontent.com/5605614/190931865-eabede2e-8e10-4117-bf73-c1fe8f2c0d21.png" title="Connect a device" width=400 />
+
+
+
+
+
+<img src="https://user-images.githubusercontent.com/5605614/190931905-0f4e8889-e4db-450e-8503-d01cd5c0258f.png" title="Generate QR Code" width=400 />
+
+
+
+
+
 
 
 <img src="" title="" width=400 />
 
 
-
+<img src="" title="" width=400 />
 
 
 <img src="" title="" width=400 />
 
 
+<img src="" title="" width=400 />
 
 
+<img src="" title="" width=400 />
 
+
+<img src="" title="" width=400 />
+
+
+<img src="" title="" width=400 />
+
+
+<img src="" title="" width=400 />
 
 <img src="" title="" width=400 />
 
