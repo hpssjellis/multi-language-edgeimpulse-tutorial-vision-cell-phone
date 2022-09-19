@@ -1,4 +1,6 @@
 
+<html>
+<body bkcolor="Light Blue" >
 ### Vanilla Javascript Lightning Talk Pech Kucha Markdown HTML README.md
 
 
@@ -188,11 +190,13 @@ List of photos while making page
 
 <img src="https://user-images.githubusercontent.com/5605614/190932937-2733d1aa-f882-46cc-ba0f-4b900251a9cd.png" title="Features finished" width=400 />
 
-<img src="" title="" width=400 />
+
  
+<img src="https://user-images.githubusercontent.com/5605614/190945162-03662614-cdeb-43ec-92fa-0fe9201ec8ce.png" title="Training" width=400 />
  
+
  
-<img src="" title="" width=400 />
+<img src="https://user-images.githubusercontent.com/5605614/190945290-6d11060f-0e88-4b8a-9f09-0d06eac74baf.png" title="Live Classification" width=400 />
  
  
  
@@ -416,4 +420,7 @@ function myNext(){
   carousel();  
 }  
 ;
-</script>  
+</script> 
+ 
+ </body>
+ </html>
