@@ -225,7 +225,7 @@ List of photos while making page
  
  
  
-<img src="" title="" width=400 />
+<img src="rocksetta-edgeimpulse-wasm-small.gif" title="Rocksetta-Wasm-gif" width=400 />
  
  
  
