@@ -205,13 +205,22 @@ List of photos while making page
  
  
  
+ Only do this step if you have an <pre>https</pre>  Web server like a github gitpages setup. Download the WASM zipped file, unzip it and upload it to your HTTPS webserver. 
  
-<img src="" title="" width=400 />
+
+
+ 
+<img src="https://user-images.githubusercontent.com/5605614/190948297-cce2cc02-2539-418c-8f1b-d0b474ae3328.png" title="EdgeImpulse WASM" width=400 />
+ 
+ Then replace the index.html file with this file that I made which uses the computers webcam  [downloads/index.html](downloads/index.html)
+ 
+ 
+
+
  
  
  
- 
-<img src="" title="" width=400 />
+<img src="https://user-images.githubusercontent.com/5605614/190948583-7f5e3540-4383-4ebe-8040-223520812e54.png" title="Rocksetta WASM" width=400 />
  
  
  
