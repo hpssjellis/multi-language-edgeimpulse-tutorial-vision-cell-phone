@@ -179,13 +179,14 @@ List of photos while making page
 <img src="https://user-images.githubusercontent.com/5605614/190932155-952cbfa1-9609-4482-9e52-61fee6be4833.png" title="Data and labels" width=400 />
 
 
-<img src="" title="" width=400 />
+
+<img src="https://user-images.githubusercontent.com/5605614/190932775-779d6926-d510-4ab4-973a-d37c23ba127f.png" title="Impulse Design" width=400 />
 
 
-<img src="" title="" width=400 />
+<img src="https://user-images.githubusercontent.com/5605614/190932896-2894d08c-42e4-40bf-b2f8-699435c0332b.png" title="Image Features" width=400 />
 
 
-<img src="" title="" width=400 />
+<img src="https://user-images.githubusercontent.com/5605614/190932937-2733d1aa-f882-46cc-ba0f-4b900251a9cd.png" title="Features finished" width=400 />
 
 <img src="" title="" width=400 />
  
