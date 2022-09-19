@@ -199,9 +199,11 @@ List of photos while making page
 <img src="https://user-images.githubusercontent.com/5605614/190945290-6d11060f-0e88-4b8a-9f09-0d06eac74baf.png" title="Live Classification" width=400 />
  
  
+  
+<img src="https://user-images.githubusercontent.com/5605614/190945653-509f70ef-2da5-4e1f-89a8-ffd34e560a0f.png" title="WASM Deployment" width=400 />
  
- 
-<img src="" title="" width=400 />
+
+<img src="https://user-images.githubusercontent.com/5605614/190945861-240340df-ccd4-4726-acca-1c2e74bfc190.png" title="unzip WASM for browser" width=400 />
  
  
  
