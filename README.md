@@ -368,7 +368,7 @@ A few Javascript abilites do not work, such as hiding the code. So all the Javas
  let myCountUp = 0;
  let xSlide = 3;
  let myAudio01 = new Audio();
- 
+ document.body.style.backgroundColor = "red";
 ;
  
 function mySetup(){
