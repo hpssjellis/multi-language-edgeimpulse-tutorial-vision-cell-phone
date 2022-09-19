@@ -1,6 +1,4 @@
 
-<html>
-<body bkcolor="Light Blue" >
 ### Vanilla Javascript Lightning Talk Pech Kucha Markdown HTML README.md
 
 
@@ -424,5 +422,4 @@ function myNext(){
 ;
 </script> 
  
- </body>
- </html>
+
