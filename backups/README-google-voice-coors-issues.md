@@ -238,19 +238,14 @@ Note: For the later WASM example the RAW FEATURES will be useful to copy for lat
 #### 11
 # Check you data using your cell phone loaded with the EdgeImpulse Web App
 
-Back to your cell phone which you might have to re-connect to edgeImpulse. Click the button "Switch to Classification"
+Back to your cell phone which you might have to re-connect to edgeImpulse. Click the button "Switch to Classification". Scan many objects and see the percent in decimal format 0.73 = 73%. Notice how fast the model analyses objects. 
 
-<img src="https://user-images.githubusercontent.com/5605614/191164011-0ea13926-6579-43bc-b950-0cc8f7f38dfc.png" title="Switch to Classification" width=200 />
- 
- 
-Show many objects and see the percent in decimal format 0.73 = 73%. Notice how fast the model analyses objects. 
-
-<img src="https://user-images.githubusercontent.com/5605614/191164153-81ebd3d8-c789-4bd8-835b-e343c7d2965b.png" title="Inference1" width=200 />. .<img src="https://user-images.githubusercontent.com/5605614/191164252-8c164b99-df14-4b87-986e-f27ad79ee2ad.png" title="Inference2" width=200 />. .<img src="https://user-images.githubusercontent.com/5605614/191164328-1ef2203d-203f-4ec7-abe1-30aed6350a91.png" title="Inference3" width=200 />
+<img src="https://user-images.githubusercontent.com/5605614/191164011-0ea13926-6579-43bc-b950-0cc8f7f38dfc.png" title="Switch to Classification" width=200 /> <img src="https://user-images.githubusercontent.com/5605614/191164153-81ebd3d8-c789-4bd8-835b-e343c7d2965b.png" title="Inference1" width=200 /> <img src="https://user-images.githubusercontent.com/5605614/191164252-8c164b99-df14-4b87-986e-f27ad79ee2ad.png" title="Inference2" width=200 /> <img src="https://user-images.githubusercontent.com/5605614/191164328-1ef2203d-203f-4ec7-abe1-30aed6350a91.png" title="Inference3" width=200 />
  
  
  
  
-<br><br><br><br><br>
+<br><br><br>
 <hr>
 
 #### 12
