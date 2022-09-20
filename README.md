@@ -109,55 +109,50 @@ Number of Slides: <input type="text" id="myCountLinks" size="6" value="15" >, Se
   
  </div>
 
+
+
+
+
+
+
+
 #### 1
+# Intro to Edge Impulse before using the Arduino Machine Learning Kit.
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<hr>
-
-
-#### 2
-
-
-Show how to do images and links. Note: To get the url just paste an image right here
-
-<img src="https://user-images.githubusercontent.com/5605614/175780835-2b0d64a4-0ba8-4c90-9f05-fb4e89cd6980.png" width=700 />
-
-[https://github.com/hpssjellis](https://github.com/hpssjellis)
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<hr>
-
-
-#### 3
-
-
-List of photos while making page
-
-
+Your must login.
 
 <img src="https://user-images.githubusercontent.com/5605614/190931142-55689c3c-124b-4558-ba9c-d025ef148461.png" title="EdgeImpulse login or setup" width=400 />
 
-
+and then create a new Project
 
 <img src="https://user-images.githubusercontent.com/5605614/190931666-39a92ca7-e8d6-435c-86ac-ef1ed825008d.png" title="Create new project" width=400 />
 
+<br><br><br><br><br>
+<hr>
 
+#### 2
+# Dashboard
+
+Check the dashboard far right to see if you have vision set to a single label per item and the latency calculations to the Arduino ML Kit, or whatever borad you will be working with. Note: Some screens must be increased to see the left menu that shows the main steps.
 
 <img src="https://user-images.githubusercontent.com/5605614/190931807-c63b069a-307e-454b-998e-839cde729637.png" title="Check Dashboard" width=400 />
 
-![image](https://user-images.githubusercontent.com/5605614/190931865-eabede2e-8e10-4117-bf73-c1fe8f2c0d21.png)
+<br><br><br><br><br>
+<hr>
 
+#### 3
+# Connect Device  
+Select Devices. For this demonstration we will connect a cell phone to edgeimpulse instead of your Arduino ML kit. Click "Connect a Device"
 
 <img src="https://user-images.githubusercontent.com/5605614/190931865-eabede2e-8e10-4117-bf73-c1fe8f2c0d21.png" title="Connect a device" width=400 />
 
 
-
+Then click Generate QR Code"
 
 
 <img src="https://user-images.githubusercontent.com/5605614/190931905-0f4e8889-e4db-450e-8503-d01cd5c0258f.png" title="Generate QR Code" width=400 />
 
-
+Many students will have QR code reading ability on their cell phones. Read the QR code and let it load the page.
 
 
 
@@ -167,22 +162,53 @@ List of photos while making page
 
 <img src="https://user-images.githubusercontent.com/5605614/190932534-3966d36a-18fb-4004-aa35-6c529a520765.png" title="Permissions" width=300 />
 
+<br><br><br><br><br>
+<hr>
 
+#### 4
+# Edge Impulse Web App Unknown
+
+Make sure the label says "unknown" before taking about 50 images of things that do not look like "pens". Note: There is a small advantage to make you labels numerical by putting a number directly before the label "0unknown"
  
 <img src="https://user-images.githubusercontent.com/5605614/190932549-b12f03d2-0416-4d1f-9966-ea1df91285b2.png" title="Unknown" width=300 />
 
+<br><br><br><br><br>
+<hr>
 
+#### 5
+# Edge Impulse Web App Pen
 
+Make sure the label says "pen" before taking about 30 images of pens or pencils. Note: There is a small advantage to make you labels numerical by putting a number directly before the label "1pen", etc if you have more labels "2stapler"
 
 <img src="https://user-images.githubusercontent.com/5605614/190932565-18a1cd7a-e056-4f85-805d-e19b13d1a102.png" title="Pen" width=300 />
 
+<br><br><br><br><br>
+<hr>
 
+#### 6
+# Data Acquisition and Labels
+
+Select Data Acquisition.  
+Many students mess up and forget to label the items. You can manually edit the label names,  also filter by names and select multiple filters. (But be carefully you don't really mess up the labels)
 
 <img src="https://user-images.githubusercontent.com/5605614/190932155-952cbfa1-9609-4482-9e52-61fee6be4833.png" title="Data and labels" width=400 />
 
+<br><br><br><br><br>
+<hr>
 
+#### 7
+# Design your Impulse (Machine Learning Model)
+Select Design Impulse 
+This page looks complex but we are just going to use the defaults. 96 x 96 image max would be 320 x 320 note it is always square. For both "Add a Processing Block" and "Add a lrearning Block" we are just going to use the default identified with a yellow star. Make sure you check that you only have 2 labels for this demo and that you click "Save Impulse"
 
 <img src="https://user-images.githubusercontent.com/5605614/190932775-779d6926-d510-4ab4-973a-d37c23ba127f.png" title="Impulse Design" width=400 />
+
+<br><br><br><br><br>
+<hr>
+
+#### 8
+# Image Features
+Select Image and then click "Save Parameters" and then click "Generate Features". IT takes a few minutes to show the graph "Feature Explorer" See if your data looks like it will be easily seperated.
 
 
 <img src="https://user-images.githubusercontent.com/5605614/190932896-2894d08c-42e4-40bf-b2f8-699435c0332b.png" title="Image Features" width=400 />
@@ -190,16 +216,39 @@ List of photos while making page
 
 <img src="https://user-images.githubusercontent.com/5605614/190932937-2733d1aa-f882-46cc-ba0f-4b900251a9cd.png" title="Features finished" width=400 />
 
+<br><br><br><br><br>
+<hr>
 
+#### 9
+# Transfer Learning
+Select Transfer learning and then change the Training Cycles from 20 to 200, Select Auto balance Dataset and Data Augmentation and click "Start Training" This step might take several minutes. Check the loss if you can read it. Hopefully is is gracefully reducing. The smaller the loss is the relatively better your dataset is learning. When finished your model will show the accuracy, Confusiion Matrix which is faily unconfusing to understand and the Data Explorer which gives a visual graph of how well your data has been sperated into distinct sets.
  
-<img src="https://user-images.githubusercontent.com/5605614/190945162-03662614-cdeb-43ec-92fa-0fe9201ec8ce.png" title="Training" width=400 />
+<img src="https://user-images.githubusercontent.com/5605614/190945162-03662614-cdeb-43ec-92fa-0fe9201ec8ce.png" title="Transfer Learning" width=400 />
  
+<br><br><br><br><br>
+<hr>
 
+#### 10
+# Check you data, on EdgeImpulse with the testing dataset.
+Choose Live Classification  
+Choose a test sample, preferably one that has the pen in it first. 
+
+Note: For the later WASM example that on live features it shows the RAW FEATURES. Copying this data stream will be useeful later.
  
 <img src="https://user-images.githubusercontent.com/5605614/190945290-6d11060f-0e88-4b8a-9f09-0d06eac74baf.png" title="Live Classification" width=400 />
 
+<br><br><br><br><br>
+<hr>
+
+#### 11
+# Check you data using your cell phone loaded with the EdgeImpulse web App
+
+Back to your cell phone which you might have to re-connect to edgeImpulse. Click the button "Switch to Classification"
+
 <img src="https://user-images.githubusercontent.com/5605614/191164011-0ea13926-6579-43bc-b950-0cc8f7f38dfc.png" title="Switch to Classification" width=400 />
  
+ 
+Show many objects and see the percent in decimal format 0.73 = 73%. Notice how fast the model analyses objects. 
 
 <img src="https://user-images.githubusercontent.com/5605614/191164153-81ebd3d8-c789-4bd8-835b-e343c7d2965b.png" title="Inference1" width=400 />
    
@@ -214,27 +263,45 @@ List of photos while making page
  
  
  
- 
+<br><br><br><br><br>
+<hr>
+
+#### 12
+# Check you data using EdgeImpulse WASM (web Assembly Language)
+
+For this optional but well worth it step you would need an HTTPS web server like github that has be converted to show gitpages. Very easy in github select "settings" then pages then change "none" to "master" and save, then wait 30 seconds and refresh to see your website URL.
+
+On EdgeImpulse select "Deployment" choose "WASM and click "Build" look in your downloads folder.
  
  
   
 <img src="https://user-images.githubusercontent.com/5605614/190945653-509f70ef-2da5-4e1f-89a8-ffd34e560a0f.png" title="WASM Deployment" width=400 />
+
+Unzipp the downloaded folder and upload the "browser" folder to your HTTPS webserver. 
  
 
 <img src="https://user-images.githubusercontent.com/5605614/190945861-240340df-ccd4-4726-acca-1c2e74bfc190.png" title="unzip WASM for browser" width=400 />
  
+
+Note: This step will not work from your computer even though it looks like the page loads fine. 
+
+Paste your RAW FEATURES that you copied from the "Live Classification" into the test box of the WASM index.html and see if you get similar results to what you got with the Live Classification.
+
+<img src="https://user-images.githubusercontent.com/5605614/190948297-cce2cc02-2539-418c-8f1b-d0b474ae3328.png" title="EdgeImpulse and Rocksetta WASM" width=400 />
  
  
- Only do this step if you have an <pre>https</pre>  Web server like a github gitpages setup. Download the WASM zipped file, unzip it and upload it to your HTTPS webserver. 
+<br><br><br><br><br>
+<hr>
+
+#### 13
+# Check you data using Rocksetta index.html and EdgeImpulse WASM
+
+On your HTTPS webserver (I use gitpages) browser folder you uploaded with the edgeImpulse WASM code, replace the index.html file with my (Twitter @Rocksetta) Javascript HTML WebCam Demo page That can be dowloaded at  [downloads/index.html](downloads/index.html)
  
 
-
- 
-<img src="https://user-images.githubusercontent.com/5605614/190948297-cce2cc02-2539-418c-8f1b-d0b474ae3328.png" title="EdgeImpulse WASM" width=400 />
- 
  Then replace the index.html file with this file that I made which uses the computers webcam  [downloads/index.html](downloads/index.html)
  
- 
+ What you have is a webpage that can be edited but is similar to the Cell Phone EdgeImpulse web App that you can use from a desktop computer or a cell phone that allows you to test out your edgeimpulse analysis on real data.
 
 
  
@@ -243,129 +310,38 @@ List of photos while making page
 <img src="https://user-images.githubusercontent.com/5605614/190948583-7f5e3540-4383-4ebe-8040-223520812e54.png" title="Rocksetta WASM" width=400 />
  
  
- 
+Here is an animated gif file showing what the rocksetta index.html file makes the EdgeImpulse WASM look like. 
  
 <img src="rocksetta-edgeimpulse-wasm-small.gif" title="Rocksetta-Wasm-gif" width=400 />
  
  
  
- 
-<img src="" title="" width=400 />
- 
- 
- 
- 
-<img src="" title="" width=400 />
-
-
-
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<hr>
-
-#### 4
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<hr>
-
-#### 5
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<hr>
-
-#### 6
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<hr>
-
-#### 7
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<hr>
-
-#### 8
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<hr>
-
-#### 9
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<hr>
-
-#### 10
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<hr>
-
-#### 11
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<hr>
-
-#### 12
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<hr>
-
-#### 13
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<hr>
-
 #### 14
+# End of presentation
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<hr>
+<a href="#top">Top of page</a>
 
-#### 15
 
-At 20 seconds per page and 15 slides this would be the end of a 5 min presentation
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<hr>
 
-#### 16
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<hr>
 
-#### 17
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<hr>
 
-#### 18
+ ### By Jeremy Ellis Twitter <a href="https://twitter.com/rocksetta">@Rocksetta </a> Use at your own Risk!
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<hr>
 
-#### 19
+### By Jeremy Ellis Twitter @Rocksetta Use at your own Risk!
+### Note when looking at the markdown none of the javascript buttons appear, you must go to your Gitpages Demo Link!
+A few Javascript abilites do not work, such as hiding the code. So all the Javascript not in buttons is below. 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<hr>
-
-#### 20
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<hr>
+Note: 
+1. Old ML presentation [here](https://hpssjellis.github.io/my-robotics-machine-learning-teaching-lightning-talk-pecha-kucha/)
+2. Old TensorflowJS presentation [here](https://hpssjellis.github.io/lightening-talk-Pecha-Kucha-tensorflowjs/)
+3. Teacher Presentation Feedback [here](https://hpssjellis.github.io/jeremy-ellis-tinyML-teacher-feedback-2022/)
+4. Pecha Kucha template [here](https://github.com/hpssjellis/pecha-kucha-lightning-talks-template)
+<br><br><br><br><br><br><br><br><br><br><br>
+ <hr>
+ 
 
 
 
