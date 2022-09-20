@@ -2,7 +2,7 @@
 ### Vanilla Javascript Lightning Talk Pech Kucha Markdown HTML README.md
 
 
-##### version 1.1.3-96
+##### version 1.2.0-97
 
 Fork this repo, fill in your markdown and <html> for the 15 slides (max 20 slides), record your presentation and save it as ```recorded-talk.m4a``` (or change the code to reflect the new name.)
  
@@ -121,7 +121,7 @@ Number of Slides: <input type="text" id="myCountLinks" size="6" value="15" >, Se
 
 First login to <a href="https://edgeimpulse.com/">edgeImpulse.com</a> and then create a new Project
 
-<img src="https://user-images.githubusercontent.com/5605614/190931142-55689c3c-124b-4558-ba9c-d025ef148461.png" title="EdgeImpulse login or setup" width=300 /> <img src="https://user-images.githubusercontent.com/5605614/190931666-39a92ca7-e8d6-435c-86ac-ef1ed825008d.png" title="Create new project" width=300 />
+<img src="https://user-images.githubusercontent.com/5605614/190931142-55689c3c-124b-4558-ba9c-d025ef148461.png" title="EdgeImpulse login or setup" width=400 /> <img src="https://user-images.githubusercontent.com/5605614/190931666-39a92ca7-e8d6-435c-86ac-ef1ed825008d.png" title="Create new project" width=500 />
 
 
 <hr>
@@ -140,7 +140,7 @@ Check the dashboard far right to see if you have vision set to a single label pe
 # Connect Device  
 Select Devices. For this demonstration we will connect a cell phone to EdgeImpulse instead of your Arduino ML kit. Click "Connect a Device". Then click Generate QR Code"
 
-<img src="https://user-images.githubusercontent.com/5605614/190931865-eabede2e-8e10-4117-bf73-c1fe8f2c0d21.png" title="Connect a device" width=300 /> <img src="https://user-images.githubusercontent.com/5605614/190931905-0f4e8889-e4db-450e-8503-d01cd5c0258f.png" title="Generate QR Code" width=300 />
+<img src="https://user-images.githubusercontent.com/5605614/190931865-eabede2e-8e10-4117-bf73-c1fe8f2c0d21.png" title="Connect a device" width=600 /> <img src="https://user-images.githubusercontent.com/5605614/190931905-0f4e8889-e4db-450e-8503-d01cd5c0258f.png" title="Generate QR Code" width=300 />
 
 Many students will have QR code reading ability on their cell phones. Read the QR code and let it load the page.
 
@@ -177,7 +177,7 @@ Make sure the label says "pen" before taking about 30 images of pens or pencils.
 Select Data Acquisition.  
 Many students mess up and forget to label the items. You can manually edit the label names,  also filter by names and select multiple filters. (But be carefully you don't really mess up the labels)
 
-<img src="https://user-images.githubusercontent.com/5605614/190932155-952cbfa1-9609-4482-9e52-61fee6be4833.png" title="Data and labels" width=400 />
+<img src="https://user-images.githubusercontent.com/5605614/190932155-952cbfa1-9609-4482-9e52-61fee6be4833.png" title="Data and labels" width=600 />
 
 <br><br><br>
 <hr>
@@ -189,7 +189,7 @@ This page looks complex but we are just going to use the defaults. 96 x 96 image
  
  For both "Add a Processing Block" and "Add a learning Block" we are just going to use the default identified with a yellow star. Make sure you check that you only have 2 labels (unknown and pen) for this demo and that you click "Save Impulse"
 
-<img src="https://user-images.githubusercontent.com/5605614/190932775-779d6926-d510-4ab4-973a-d37c23ba127f.png" title="Impulse Design" width=400 />
+<img src="https://user-images.githubusercontent.com/5605614/190932775-779d6926-d510-4ab4-973a-d37c23ba127f.png" title="Impulse Design" width=600 />
 
 <br><br>
 <hr>
@@ -199,7 +199,7 @@ This page looks complex but we are just going to use the defaults. 96 x 96 image
 Select Image and then click "Save Parameters" and then click "Generate Features". It takes a few minutes to show the graph "Feature Explorer" See if your data looks like it will be easily seperated.
 
 
-<img src="https://user-images.githubusercontent.com/5605614/190932896-2894d08c-42e4-40bf-b2f8-699435c0332b.png" title="Image Features" width=300 /> <img src="https://user-images.githubusercontent.com/5605614/190932937-2733d1aa-f882-46cc-ba0f-4b900251a9cd.png" title="Features finished" width=300 />
+<img src="https://user-images.githubusercontent.com/5605614/190932896-2894d08c-42e4-40bf-b2f8-699435c0332b.png" title="Image Features" width=500 /> <img src="https://user-images.githubusercontent.com/5605614/190932937-2733d1aa-f882-46cc-ba0f-4b900251a9cd.png" title="Features finished" width=500 />
 
 
 <hr>
@@ -208,7 +208,7 @@ Select Image and then click "Save Parameters" and then click "Generate Features"
 # Transfer Learning
 Select Transfer learning and then change the Training Cycles from 20 to 200, Select Auto balance Dataset and Data Augmentation and click "Start Training" This step might take several minutes. Check the "loss" if you can read it. Hopefully is is gracefully reducing. The smaller the loss is, the relatively better your dataset is learning. When finished, your model will show the accuracy, Confusion Matrix which is faily easy to understand and the Data Explorer which gives a visual graph of how well your data has been sperated into distinct sets.
  
-<img src="https://user-images.githubusercontent.com/5605614/190945162-03662614-cdeb-43ec-92fa-0fe9201ec8ce.png" title="Transfer Learning" width=400 />
+<img src="https://user-images.githubusercontent.com/5605614/190945162-03662614-cdeb-43ec-92fa-0fe9201ec8ce.png" title="Transfer Learning" width=600 />
  
 
 <hr>
@@ -220,7 +220,7 @@ Choose a test sample, preferably one that has the pen in it first.
 
 Note: For the later WASM example the RAW FEATURES will be useful to copy for later.
  
-<img src="https://user-images.githubusercontent.com/5605614/190945290-6d11060f-0e88-4b8a-9f09-0d06eac74baf.png" title="Live Classification" width=300 />
+<img src="https://user-images.githubusercontent.com/5605614/190945290-6d11060f-0e88-4b8a-9f09-0d06eac74baf.png" title="Live Classification" width=600 />
 
 
 <hr>
@@ -230,7 +230,7 @@ Note: For the later WASM example the RAW FEATURES will be useful to copy for lat
 
 Back to your cell phone which you might have to re-connect to edgeImpulse. Click the button "Switch to Classification"
 
-<img src="https://user-images.githubusercontent.com/5605614/191164011-0ea13926-6579-43bc-b950-0cc8f7f38dfc.png" title="Switch to Classification" width=100 />
+<img src="https://user-images.githubusercontent.com/5605614/191164011-0ea13926-6579-43bc-b950-0cc8f7f38dfc.png" title="Switch to Classification" width=200 />
  
  
 Show many objects and see the percent in decimal format 0.73 = 73%. Notice how fast the model analyses objects. 
@@ -267,7 +267,7 @@ Note: This step will not work from your computer even though it looks like the p
 
 Paste your RAW FEATURES that you copied from the "Live Classification" into the test box of the WASM index.html and see if you get similar results to what you got with the Live Classification.
 
-<img src="https://user-images.githubusercontent.com/5605614/190948297-cce2cc02-2539-418c-8f1b-d0b474ae3328.png" title="EdgeImpulse and Rocksetta WASM" width=200 />
+<img src="https://user-images.githubusercontent.com/5605614/190948297-cce2cc02-2539-418c-8f1b-d0b474ae3328.png" title="EdgeImpulse and Rocksetta WASM" width=600 />
  
  
 
