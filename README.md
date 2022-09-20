@@ -248,16 +248,11 @@ Show many objects and see the percent in decimal format 0.73 = 73%. Notice how f
 
 For this optional, but well worth it, step you would need an HTTPS web server like github that has be converted to show gitpages. Very easy in github: select "settings" then pages then change "none" to "master" and save, then wait 30 seconds and refresh to see your website URL.
 
-On EdgeImpulse select "Deployment" choose "WASM and click "Build". Then look in your downloads folder.
+On EdgeImpulse select "Deployment" choose "WASM and click "Build". Then look in your downloads folder. Then unzip the downloaded folder and upload the "browser" folder to your HTTPS webserver. 
  
  
   
-<img src="https://user-images.githubusercontent.com/5605614/190945653-509f70ef-2da5-4e1f-89a8-ffd34e560a0f.png" title="WASM Deployment" width=300 />
-
-Unzip the downloaded folder and upload the "browser" folder to your HTTPS webserver. 
- 
-
-<img src="https://user-images.githubusercontent.com/5605614/190945861-240340df-ccd4-4726-acca-1c2e74bfc190.png" title="unzip WASM for browser" width=300 />
+<img src="https://user-images.githubusercontent.com/5605614/190945653-509f70ef-2da5-4e1f-89a8-ffd34e560a0f.png" title="WASM Deployment" width=400 /> <img src="https://user-images.githubusercontent.com/5605614/190945861-240340df-ccd4-4726-acca-1c2e74bfc190.png" title="unzip WASM for browser" width=400 />
  
  
  <br><br><br><br><br>
@@ -286,18 +281,13 @@ On your HTTPS webserver (I use gitpages) the "browser" folder you uploaded with 
 
  Then replace the index.html file with this file that I made which uses the computers webcam  [downloads/index.html](downloads/index.html)
  
- What you have is a webpage that can be edited but is similar to the Cell Phone EdgeImpulse Web App that you can use from a desktop computer or a cell phone that allows you to test out your edgeimpulse analysis on real data.
+ What you have is a webpage that can be edited but is similar to the Cell Phone EdgeImpulse Web App that you can use from a desktop computer or a cell phone that allows you to test out your edgeimpulse analysis on real data. The second image is an animated gif file showing what the rocksetta index.html file makes the EdgeImpulse WASM look like. 
 
 
  
  
  
-<img src="https://user-images.githubusercontent.com/5605614/190948583-7f5e3540-4383-4ebe-8040-223520812e54.png" title="Rocksetta WASM" width=300 />
- 
- 
-Here is an animated gif file showing what the rocksetta index.html file makes the EdgeImpulse WASM look like. 
- 
-<img src="rocksetta-edgeimpulse-wasm-small.gif" title="Rocksetta-Wasm-gif" width=300 />
+<img src="https://user-images.githubusercontent.com/5605614/190948583-7f5e3540-4383-4ebe-8040-223520812e54.png" title="Rocksetta WASM" width=400 /> <img src="rocksetta-edgeimpulse-wasm-small.gif" title="Rocksetta-Wasm-gif" width=400 />
  
  
 
