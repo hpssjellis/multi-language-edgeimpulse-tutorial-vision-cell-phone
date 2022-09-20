@@ -121,13 +121,13 @@ Number of Slides: <input type="text" id="myCountLinks" size="6" value="15" >, Se
 
 First login.
 
-<img src="https://user-images.githubusercontent.com/5605614/190931142-55689c3c-124b-4558-ba9c-d025ef148461.png" title="EdgeImpulse login or setup" width=400 />
+<img src="https://user-images.githubusercontent.com/5605614/190931142-55689c3c-124b-4558-ba9c-d025ef148461.png" title="EdgeImpulse login or setup" width=300 />
 
 and then create a new Project
 
-<img src="https://user-images.githubusercontent.com/5605614/190931666-39a92ca7-e8d6-435c-86ac-ef1ed825008d.png" title="Create new project" width=400 />
+<img src="https://user-images.githubusercontent.com/5605614/190931666-39a92ca7-e8d6-435c-86ac-ef1ed825008d.png" title="Create new project" width=300 />
 
-<br><br><br><br><br>
+
 <hr>
 
 #### 2
@@ -144,23 +144,23 @@ Check the dashboard far right to see if you have vision set to a single label pe
 # Connect Device  
 Select Devices. For this demonstration we will connect a cell phone to EdgeImpulse instead of your Arduino ML kit. Click "Connect a Device"
 
-<img src="https://user-images.githubusercontent.com/5605614/190931865-eabede2e-8e10-4117-bf73-c1fe8f2c0d21.png" title="Connect a device" width=400 />
+<img src="https://user-images.githubusercontent.com/5605614/190931865-eabede2e-8e10-4117-bf73-c1fe8f2c0d21.png" title="Connect a device" width=200 />
 
 
 Then click Generate QR Code"
 
 
-<img src="https://user-images.githubusercontent.com/5605614/190931905-0f4e8889-e4db-450e-8503-d01cd5c0258f.png" title="Generate QR Code" width=400 />
+<img src="https://user-images.githubusercontent.com/5605614/190931905-0f4e8889-e4db-450e-8503-d01cd5c0258f.png" title="Generate QR Code" width=100 />
 
 Many students will have QR code reading ability on their cell phones. Read the QR code and let it load the page.
 
 
 
-<img src="https://user-images.githubusercontent.com/5605614/190932524-d2c92bff-5ee6-4b2d-bf19-d4c423a584b9.png" title="QR code loads" width=300 />
+<img src="https://user-images.githubusercontent.com/5605614/190932524-d2c92bff-5ee6-4b2d-bf19-d4c423a584b9.png" title="QR code loads" width=200 />
 
 Click "Allow Permissions"
 
-<img src="https://user-images.githubusercontent.com/5605614/190932534-3966d36a-18fb-4004-aa35-6c529a520765.png" title="Permissions" width=300 />
+<img src="https://user-images.githubusercontent.com/5605614/190932534-3966d36a-18fb-4004-aa35-6c529a520765.png" title="Permissions" width=200 />
 
 <br><br><br><br><br>
 <hr>
@@ -170,7 +170,7 @@ Click "Allow Permissions"
 
 Make sure the label says "unknown" before taking about 50 images of things that do not look like "pens". Note: There is a small advantage to make your labels numerical by putting a number directly before the label. For example:  "0unknown"
  
-<img src="https://user-images.githubusercontent.com/5605614/190932549-b12f03d2-0416-4d1f-9966-ea1df91285b2.png" title="Unknown" width=300 />
+<img src="https://user-images.githubusercontent.com/5605614/190932549-b12f03d2-0416-4d1f-9966-ea1df91285b2.png" title="Unknown" width=200 />
 
 <br><br><br><br><br>
 <hr>
@@ -180,7 +180,7 @@ Make sure the label says "unknown" before taking about 50 images of things that 
 
 Make sure the label says "pen" before taking about 30 images of pens or pencils. Note: There is a small advantage to make you labels numerical by putting a number directly before the label for example: "1pen", if you have more labels "2stapler" etc. For later coding this allows checking the first digit to see what the whole label is. 
 
-<img src="https://user-images.githubusercontent.com/5605614/190932565-18a1cd7a-e056-4f85-805d-e19b13d1a102.png" title="Pen" width=300 />
+<img src="https://user-images.githubusercontent.com/5605614/190932565-18a1cd7a-e056-4f85-805d-e19b13d1a102.png" title="Pen" width=200 />
 
 <br><br><br><br><br>
 <hr>
@@ -193,7 +193,7 @@ Many students mess up and forget to label the items. You can manually edit the l
 
 <img src="https://user-images.githubusercontent.com/5605614/190932155-952cbfa1-9609-4482-9e52-61fee6be4833.png" title="Data and labels" width=400 />
 
-<br><br><br><br><br>
+<br><br><br>
 <hr>
 
 #### 7
@@ -205,7 +205,7 @@ This page looks complex but we are just going to use the defaults. 96 x 96 image
 
 <img src="https://user-images.githubusercontent.com/5605614/190932775-779d6926-d510-4ab4-973a-d37c23ba127f.png" title="Impulse Design" width=400 />
 
-<br><br><br><br><br>
+<br><br>
 <hr>
 
 #### 8
@@ -213,21 +213,21 @@ This page looks complex but we are just going to use the defaults. 96 x 96 image
 Select Image and then click "Save Parameters" and then click "Generate Features". It takes a few minutes to show the graph "Feature Explorer" See if your data looks like it will be easily seperated.
 
 
-<img src="https://user-images.githubusercontent.com/5605614/190932896-2894d08c-42e4-40bf-b2f8-699435c0332b.png" title="Image Features" width=400 />
+<img src="https://user-images.githubusercontent.com/5605614/190932896-2894d08c-42e4-40bf-b2f8-699435c0332b.png" title="Image Features" width=300 />
 
 
-<img src="https://user-images.githubusercontent.com/5605614/190932937-2733d1aa-f882-46cc-ba0f-4b900251a9cd.png" title="Features finished" width=400 />
+<img src="https://user-images.githubusercontent.com/5605614/190932937-2733d1aa-f882-46cc-ba0f-4b900251a9cd.png" title="Features finished" width=300 />
 
-<br><br><br><br><br>
+
 <hr>
 
 #### 9
 # Transfer Learning
 Select Transfer learning and then change the Training Cycles from 20 to 200, Select Auto balance Dataset and Data Augmentation and click "Start Training" This step might take several minutes. Check the "loss" if you can read it. Hopefully is is gracefully reducing. The smaller the loss is, the relatively better your dataset is learning. When finished, your model will show the accuracy, Confusion Matrix which is faily easy to understand and the Data Explorer which gives a visual graph of how well your data has been sperated into distinct sets.
  
-<img src="https://user-images.githubusercontent.com/5605614/190945162-03662614-cdeb-43ec-92fa-0fe9201ec8ce.png" title="Transfer Learning" width=400 />
+<img src="https://user-images.githubusercontent.com/5605614/190945162-03662614-cdeb-43ec-92fa-0fe9201ec8ce.png" title="Transfer Learning" width=300 />
  
-<br><br><br><br><br>
+
 <hr>
 
 #### 10
@@ -237,9 +237,9 @@ Choose a test sample, preferably one that has the pen in it first.
 
 Note: For the later WASM example the RAW FEATURES will be useful to copy for later.
  
-<img src="https://user-images.githubusercontent.com/5605614/190945290-6d11060f-0e88-4b8a-9f09-0d06eac74baf.png" title="Live Classification" width=400 />
+<img src="https://user-images.githubusercontent.com/5605614/190945290-6d11060f-0e88-4b8a-9f09-0d06eac74baf.png" title="Live Classification" width=300 />
 
-<br><br><br><br><br>
+
 <hr>
 
 #### 11
@@ -247,20 +247,20 @@ Note: For the later WASM example the RAW FEATURES will be useful to copy for lat
 
 Back to your cell phone which you might have to re-connect to edgeImpulse. Click the button "Switch to Classification"
 
-<img src="https://user-images.githubusercontent.com/5605614/191164011-0ea13926-6579-43bc-b950-0cc8f7f38dfc.png" title="Switch to Classification" width=400 />
+<img src="https://user-images.githubusercontent.com/5605614/191164011-0ea13926-6579-43bc-b950-0cc8f7f38dfc.png" title="Switch to Classification" width=100 />
  
  
 Show many objects and see the percent in decimal format 0.73 = 73%. Notice how fast the model analyses objects. 
 
-<img src="https://user-images.githubusercontent.com/5605614/191164153-81ebd3d8-c789-4bd8-835b-e343c7d2965b.png" title="Inference1" width=400 />
+<img src="https://user-images.githubusercontent.com/5605614/191164153-81ebd3d8-c789-4bd8-835b-e343c7d2965b.png" title="Inference1" width=100 />
    
 
  
  
-<img src="https://user-images.githubusercontent.com/5605614/191164252-8c164b99-df14-4b87-986e-f27ad79ee2ad.png" title="Inference2" width=400 />
+<img src="https://user-images.githubusercontent.com/5605614/191164252-8c164b99-df14-4b87-986e-f27ad79ee2ad.png" title="Inference2" width=100 />
    
 
-<img src="https://user-images.githubusercontent.com/5605614/191164328-1ef2203d-203f-4ec7-abe1-30aed6350a91.png" title="Inference3" width=400 />
+<img src="https://user-images.githubusercontent.com/5605614/191164328-1ef2203d-203f-4ec7-abe1-30aed6350a91.png" title="Inference3" width=100 />
  
  
  
@@ -277,22 +277,22 @@ On EdgeImpulse select "Deployment" choose "WASM and click "Build" look in your d
  
  
   
-<img src="https://user-images.githubusercontent.com/5605614/190945653-509f70ef-2da5-4e1f-89a8-ffd34e560a0f.png" title="WASM Deployment" width=400 />
+<img src="https://user-images.githubusercontent.com/5605614/190945653-509f70ef-2da5-4e1f-89a8-ffd34e560a0f.png" title="WASM Deployment" width=100 />
 
 Unzipp the downloaded folder and upload the "browser" folder to your HTTPS webserver. 
  
 
-<img src="https://user-images.githubusercontent.com/5605614/190945861-240340df-ccd4-4726-acca-1c2e74bfc190.png" title="unzip WASM for browser" width=400 />
+<img src="https://user-images.githubusercontent.com/5605614/190945861-240340df-ccd4-4726-acca-1c2e74bfc190.png" title="unzip WASM for browser" width=100 />
  
 
 Note: This step will not work from your computer even though it looks like the page loads fine. 
 
 Paste your RAW FEATURES that you copied from the "Live Classification" into the test box of the WASM index.html and see if you get similar results to what you got with the Live Classification.
 
-<img src="https://user-images.githubusercontent.com/5605614/190948297-cce2cc02-2539-418c-8f1b-d0b474ae3328.png" title="EdgeImpulse and Rocksetta WASM" width=400 />
+<img src="https://user-images.githubusercontent.com/5605614/190948297-cce2cc02-2539-418c-8f1b-d0b474ae3328.png" title="EdgeImpulse and Rocksetta WASM" width=200 />
  
  
-<br><br><br><br><br>
+
 <hr>
 
 #### 13
@@ -309,15 +309,16 @@ On your HTTPS webserver (I use gitpages) the "browser" folder you uploaded with 
  
  
  
-<img src="https://user-images.githubusercontent.com/5605614/190948583-7f5e3540-4383-4ebe-8040-223520812e54.png" title="Rocksetta WASM" width=400 />
+<img src="https://user-images.githubusercontent.com/5605614/190948583-7f5e3540-4383-4ebe-8040-223520812e54.png" title="Rocksetta WASM" width=300 />
  
  
 Here is an animated gif file showing what the rocksetta index.html file makes the EdgeImpulse WASM look like. 
  
-<img src="rocksetta-edgeimpulse-wasm-small.gif" title="Rocksetta-Wasm-gif" width=400 />
+<img src="rocksetta-edgeimpulse-wasm-small.gif" title="Rocksetta-Wasm-gif" width=300 />
  
  
- 
+
+<hr> 
 #### 14
 # End of presentation
 
