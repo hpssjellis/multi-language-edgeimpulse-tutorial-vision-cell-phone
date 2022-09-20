@@ -141,9 +141,9 @@ First login to <a href="https://edgeimpulse.com/">edgeImpulse.com</a> and then c
 
 Check the dashboard far right to see if you have vision set to a single label per item and the latency calculations to the Arduino ML Kit, or whatever microcontroller board you will be working with. Note: Some screens must be increased to see the left menu that shows the main EdgeImpulse steps.
 
-<img src="https://user-images.githubusercontent.com/5605614/190931807-c63b069a-307e-454b-998e-839cde729637.png" title="Check Dashboard" width=400 />
+<img src="https://user-images.githubusercontent.com/5605614/190931807-c63b069a-307e-454b-998e-839cde729637.png" title="Check Dashboard" width=500 /> <img src="https://user-images.githubusercontent.com/5605614/191381569-e775786f-43c3-46b3-87bc-f10ebb24acb5.png****" title="Check Dashboard" width=500 />
 
-<br><br><br><br><br>
+<br><br><br>
 <hr>
 
 #### 3
