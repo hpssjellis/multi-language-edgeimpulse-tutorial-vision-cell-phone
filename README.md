@@ -2,7 +2,7 @@
 ### Vanilla Javascript Lightning Talk Pech Kucha Markdown HTML README.md
 
 
-##### version 1.1.2-95
+##### version 1.1.3-96
 
 Fork this repo, fill in your markdown and <html> for the 15 slides (max 20 slides), record your presentation and save it as ```recorded-talk.m4a``` (or change the code to reflect the new name.)
  
@@ -15,17 +15,24 @@ This Github Repository (replace this link with your Repository Link) [https://gi
 
 
 Number of Slides: <input type="text" id="myCountLinks" size="6" value="15" >, Seconds for each Slide: <input type="text" id="myCountMax" size="30" value="20" >   Can be a list of seconds example: 17, 20, 24, 20 The last number continues.
+ 
+ 
+ To convert to any language click <a href="https://translate.google.com/?sl=en&tl=es&op=websites">here</a><br>
+ For example This page in: <a href="https://hpssjellis-github-io.translate.goog/jeremy-ellis-tinyML-teacher-feedback-2022/?_x_tr_sl=en&_x_tr_tl=fr&_x_tr_hl=en&_x_tr_pto=wapp">French</a>, <a href="https://hpssjellis-github-io.translate.goog/jeremy-ellis-tinyML-teacher-feedback-2022/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=en&_x_tr_pto=wapp">Spanish</a>
+ 
+ <input type=button value="Sound by Mr. Ellis in English" onclick="{ 
+   document.getElementById('myCountMax').value = '2,5,1,3,1,6,3,20'    // in seconds how much time per page, last value continues
+   mySetup()                                             
+   myAudio01 = new Audio('recorded-talk.m4a');
+   myAudio01.play(); 
+   carousel();                                                
+}"> 
 
+ 
+ 
 <div id="myNumSlides" style=" position:sticky; top:0px; left:20px; height:25px; "> ...</div>  <br>
 
   
-
-
-
-
-
-
-
 
 
 <div id="myStick"  style=" position:sticky; top:30px; display:inline; ">
@@ -35,12 +42,7 @@ Number of Slides: <input type="text" id="myCountLinks" size="6" value="15" >, Se
    carousel();  
 }">
  
-<input type=button value="Start-Pre-Recorded" onclick="{                                                        
-   mySetup()                                             
-   myAudio01 = new Audio('recorded-talk.m4a');
-   myAudio01.play(); 
-   carousel();                                                
-}">  
+ 
  
   <input type=button value="Rewind" onclick="{
    myIndex = 0;  
