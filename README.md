@@ -119,13 +119,9 @@ Number of Slides: <input type="text" id="myCountLinks" size="6" value="15" >, Se
 #### 1
 # Intro to Edge Impulse before using the Arduino Machine Learning Kit.
 
-First login.
+First login to <a href="https://edgeimpulse.com/">edgeImpulse.com</a> and then create a new Project
 
-<img src="https://user-images.githubusercontent.com/5605614/190931142-55689c3c-124b-4558-ba9c-d025ef148461.png" title="EdgeImpulse login or setup" width=300 />
-
-and then create a new Project
-
-<img src="https://user-images.githubusercontent.com/5605614/190931666-39a92ca7-e8d6-435c-86ac-ef1ed825008d.png" title="Create new project" width=300 />
+<img src="https://user-images.githubusercontent.com/5605614/190931142-55689c3c-124b-4558-ba9c-d025ef148461.png" title="EdgeImpulse login or setup" width=300 /> <img src="https://user-images.githubusercontent.com/5605614/190931666-39a92ca7-e8d6-435c-86ac-ef1ed825008d.png" title="Create new project" width=300 />
 
 
 <hr>
@@ -142,31 +138,21 @@ Check the dashboard far right to see if you have vision set to a single label pe
 
 #### 3
 # Connect Device  
-Select Devices. For this demonstration we will connect a cell phone to EdgeImpulse instead of your Arduino ML kit. Click "Connect a Device"
+Select Devices. For this demonstration we will connect a cell phone to EdgeImpulse instead of your Arduino ML kit. Click "Connect a Device". Then click Generate QR Code"
 
-<img src="https://user-images.githubusercontent.com/5605614/190931865-eabede2e-8e10-4117-bf73-c1fe8f2c0d21.png" title="Connect a device" width=200 />
-
-
-Then click Generate QR Code"
-
-
-<img src="https://user-images.githubusercontent.com/5605614/190931905-0f4e8889-e4db-450e-8503-d01cd5c0258f.png" title="Generate QR Code" width=100 />
+<img src="https://user-images.githubusercontent.com/5605614/190931865-eabede2e-8e10-4117-bf73-c1fe8f2c0d21.png" title="Connect a device" width=300 /> <img src="https://user-images.githubusercontent.com/5605614/190931905-0f4e8889-e4db-450e-8503-d01cd5c0258f.png" title="Generate QR Code" width=300 />
 
 Many students will have QR code reading ability on their cell phones. Read the QR code and let it load the page.
 
-
-
-<img src="https://user-images.githubusercontent.com/5605614/190932524-d2c92bff-5ee6-4b2d-bf19-d4c423a584b9.png" title="QR code loads" width=200 />
-
 Click "Allow Permissions"
 
-<img src="https://user-images.githubusercontent.com/5605614/190932534-3966d36a-18fb-4004-aa35-6c529a520765.png" title="Permissions" width=200 />
+<img src="https://user-images.githubusercontent.com/5605614/190932524-d2c92bff-5ee6-4b2d-bf19-d4c423a584b9.png" title="QR code loads" width=200 /> <img src="https://user-images.githubusercontent.com/5605614/190932534-3966d36a-18fb-4004-aa35-6c529a520765.png" title="Permissions" width=200 />
 
 <br><br><br><br><br>
 <hr>
 
 #### 4
-# Edge Impulse Web App Unknown
+# Edge Impulse Web App Data Collection: Label Unknown
 
 Make sure the label says "unknown" before taking about 50 images of things that do not look like "pens". Note: There is a small advantage to make your labels numerical by putting a number directly before the label. For example:  "0unknown"
  
@@ -176,7 +162,7 @@ Make sure the label says "unknown" before taking about 50 images of things that 
 <hr>
 
 #### 5
-# Edge Impulse Web App Pen
+# Edge Impulse Web App Data Collection: Label Pen
 
 Make sure the label says "pen" before taking about 30 images of pens or pencils. Note: There is a small advantage to make you labels numerical by putting a number directly before the label for example: "1pen", if you have more labels "2stapler" etc. For later coding this allows checking the first digit to see what the whole label is. 
 
@@ -213,7 +199,7 @@ This page looks complex but we are just going to use the defaults. 96 x 96 image
 Select Image and then click "Save Parameters" and then click "Generate Features". It takes a few minutes to show the graph "Feature Explorer" See if your data looks like it will be easily seperated.
 
 
-<img src="https://user-images.githubusercontent.com/5605614/190932896-2894d08c-42e4-40bf-b2f8-699435c0332b.png" title="Image Features" width=300 /><img src="https://user-images.githubusercontent.com/5605614/190932937-2733d1aa-f882-46cc-ba0f-4b900251a9cd.png" title="Features finished" width=300 />
+<img src="https://user-images.githubusercontent.com/5605614/190932896-2894d08c-42e4-40bf-b2f8-699435c0332b.png" title="Image Features" width=300 /> <img src="https://user-images.githubusercontent.com/5605614/190932937-2733d1aa-f882-46cc-ba0f-4b900251a9cd.png" title="Features finished" width=300 />
 
 
 <hr>
@@ -222,7 +208,7 @@ Select Image and then click "Save Parameters" and then click "Generate Features"
 # Transfer Learning
 Select Transfer learning and then change the Training Cycles from 20 to 200, Select Auto balance Dataset and Data Augmentation and click "Start Training" This step might take several minutes. Check the "loss" if you can read it. Hopefully is is gracefully reducing. The smaller the loss is, the relatively better your dataset is learning. When finished, your model will show the accuracy, Confusion Matrix which is faily easy to understand and the Data Explorer which gives a visual graph of how well your data has been sperated into distinct sets.
  
-<img src="https://user-images.githubusercontent.com/5605614/190945162-03662614-cdeb-43ec-92fa-0fe9201ec8ce.png" title="Transfer Learning" width=300 />
+<img src="https://user-images.githubusercontent.com/5605614/190945162-03662614-cdeb-43ec-92fa-0fe9201ec8ce.png" title="Transfer Learning" width=400 />
  
 
 <hr>
@@ -258,21 +244,29 @@ Show many objects and see the percent in decimal format 0.73 = 73%. Notice how f
 <hr>
 
 #### 12
-# Check you data using EdgeImpulse WASM (web Assembly Language)
+# Check you data using EdgeImpulse WASM (Web Assembly Language)
 
-For this optional but well worth it step you would need an HTTPS web server like github that has be converted to show gitpages. Very easy in github: select "settings" then pages then change "none" to "master" and save, then wait 30 seconds and refresh to see your website URL.
+For this optional, but well worth it, step you would need an HTTPS web server like github that has be converted to show gitpages. Very easy in github: select "settings" then pages then change "none" to "master" and save, then wait 30 seconds and refresh to see your website URL.
 
-On EdgeImpulse select "Deployment" choose "WASM and click "Build" look in your downloads folder.
+On EdgeImpulse select "Deployment" choose "WASM and click "Build". Then look in your downloads folder.
  
  
   
-<img src="https://user-images.githubusercontent.com/5605614/190945653-509f70ef-2da5-4e1f-89a8-ffd34e560a0f.png" title="WASM Deployment" width=100 />
+<img src="https://user-images.githubusercontent.com/5605614/190945653-509f70ef-2da5-4e1f-89a8-ffd34e560a0f.png" title="WASM Deployment" width=300 />
 
-Unzipp the downloaded folder and upload the "browser" folder to your HTTPS webserver. 
+Unzip the downloaded folder and upload the "browser" folder to your HTTPS webserver. 
  
 
-<img src="https://user-images.githubusercontent.com/5605614/190945861-240340df-ccd4-4726-acca-1c2e74bfc190.png" title="unzip WASM for browser" width=100 />
+<img src="https://user-images.githubusercontent.com/5605614/190945861-240340df-ccd4-4726-acca-1c2e74bfc190.png" title="unzip WASM for browser" width=300 />
  
+ 
+ <br><br><br><br><br>
+<hr>
+
+#### 13
+# Check you data using EdgeImpulse WASM (web Assembly Language)
+
+Reminder: you would need an HTTPS web server such as github setup to use Gitpages.
 
 Note: This step will not work from your computer even though it looks like the page loads fine. 
 
@@ -284,7 +278,7 @@ Paste your RAW FEATURES that you copied from the "Live Classification" into the 
 
 <hr>
 
-#### 13
+#### 14
 # Check you data using Rocksetta index.html and EdgeImpulse WASM
 
 On your HTTPS webserver (I use gitpages) the "browser" folder you uploaded with the edgeImpulse WASM code, replace the index.html file with my (Twitter @Rocksetta) Javascript HTML WebCam Demo page That can be dowloaded at  [downloads/index.html](downloads/index.html)
@@ -308,7 +302,7 @@ Here is an animated gif file showing what the rocksetta index.html file makes th
  
 
 <hr> 
-#### 14
+#### 15
 # End of presentation
 
 <a href="#top">Top of page</a>
