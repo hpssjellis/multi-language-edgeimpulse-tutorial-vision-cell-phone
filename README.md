@@ -119,7 +119,7 @@ Number of Slides: <input type="text" id="myCountLinks" size="6" value="15" >, Se
 #### 1
 # Intro to Edge Impulse before using the Arduino Machine Learning Kit.
 
-Your must login.
+First login.
 
 <img src="https://user-images.githubusercontent.com/5605614/190931142-55689c3c-124b-4558-ba9c-d025ef148461.png" title="EdgeImpulse login or setup" width=400 />
 
@@ -133,7 +133,7 @@ and then create a new Project
 #### 2
 # Dashboard
 
-Check the dashboard far right to see if you have vision set to a single label per item and the latency calculations to the Arduino ML Kit, or whatever borad you will be working with. Note: Some screens must be increased to see the left menu that shows the main steps.
+Check the dashboard far right to see if you have vision set to a single label per item and the latency calculations to the Arduino ML Kit, or whatever borad you will be working with. Note: Some screens must be increased to see the left menu that shows the main EdgeImpulse steps.
 
 <img src="https://user-images.githubusercontent.com/5605614/190931807-c63b069a-307e-454b-998e-839cde729637.png" title="Check Dashboard" width=400 />
 
