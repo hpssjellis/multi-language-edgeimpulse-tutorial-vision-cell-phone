@@ -224,7 +224,7 @@ Select Transfer learning and then change the Training Cycles from 20 to 200, Sel
 <hr>
 
 #### 10
-# Check you data, on EdgeImpulse with the testing dataset.
+# Check your data, on EdgeImpulse with the testing dataset.
 Choose Live Classification  
 Choose a test sample, preferably one that has the pen in it first. 
 
