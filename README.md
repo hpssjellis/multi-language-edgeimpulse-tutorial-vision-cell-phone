@@ -213,10 +213,7 @@ This page looks complex but we are just going to use the defaults. 96 x 96 image
 Select Image and then click "Save Parameters" and then click "Generate Features". It takes a few minutes to show the graph "Feature Explorer" See if your data looks like it will be easily seperated.
 
 
-<img src="https://user-images.githubusercontent.com/5605614/190932896-2894d08c-42e4-40bf-b2f8-699435c0332b.png" title="Image Features" width=300 />
-
-
-<img src="https://user-images.githubusercontent.com/5605614/190932937-2733d1aa-f882-46cc-ba0f-4b900251a9cd.png" title="Features finished" width=300 />
+<img src="https://user-images.githubusercontent.com/5605614/190932896-2894d08c-42e4-40bf-b2f8-699435c0332b.png" title="Image Features" width=300 /><img src="https://user-images.githubusercontent.com/5605614/190932937-2733d1aa-f882-46cc-ba0f-4b900251a9cd.png" title="Features finished" width=300 />
 
 
 <hr>
@@ -252,15 +249,7 @@ Back to your cell phone which you might have to re-connect to edgeImpulse. Click
  
 Show many objects and see the percent in decimal format 0.73 = 73%. Notice how fast the model analyses objects. 
 
-<img src="https://user-images.githubusercontent.com/5605614/191164153-81ebd3d8-c789-4bd8-835b-e343c7d2965b.png" title="Inference1" width=100 />
-   
-
- 
- 
-<img src="https://user-images.githubusercontent.com/5605614/191164252-8c164b99-df14-4b87-986e-f27ad79ee2ad.png" title="Inference2" width=100 />
-   
-
-<img src="https://user-images.githubusercontent.com/5605614/191164328-1ef2203d-203f-4ec7-abe1-30aed6350a91.png" title="Inference3" width=100 />
+<img src="https://user-images.githubusercontent.com/5605614/191164153-81ebd3d8-c789-4bd8-835b-e343c7d2965b.png" title="Inference1" width=100 /><img src="https://user-images.githubusercontent.com/5605614/191164252-8c164b99-df14-4b87-986e-f27ad79ee2ad.png" title="Inference2" width=100 /><img src="https://user-images.githubusercontent.com/5605614/191164328-1ef2203d-203f-4ec7-abe1-30aed6350a91.png" title="Inference3" width=100 />
  
  
  
