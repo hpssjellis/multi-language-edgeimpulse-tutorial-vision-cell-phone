@@ -2,7 +2,7 @@
 ### Vanilla Javascript Lightning Talk Pech Kucha Markdown HTML README.md
 
 
-##### version 1.2.0-98
+##### version 1.2.0-99
 
 Fork this repo, fill in your markdown and <html> for the 15 slides (max 20 slides), record your presentation and save it as ```recorded-talk.m4a``` (or change the code to reflect the new name.)
  
@@ -123,7 +123,7 @@ Number of Slides: <input type="text" id="myCountLinks" size="6" value="15" >, Se
 
 
 
-  <div id="google_translate_element">
+<div id="google_translate_element">I really like javascript</div>
 
 
 #### 1
@@ -305,7 +305,7 @@ On your HTTPS webserver (I use gitpages) the "browser" folder you uploaded with 
 #### 15
 # End of presentation
     
-</div>   <!--   This is the end of google translate div -->
+   <!--   This is the end of google translate div -->
 
 <a href="#top">Top of page</a>
 
