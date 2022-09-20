@@ -14,7 +14,7 @@ Demo of this Github Markdown can be viewed at this GitPages site (replace this l
 This Github Repository (replace this link with your Repository Link) [https://github.com/hpssjellis/multi-language-edgeimpulse-tutorial-vision-cell-phone](https://github.com/hpssjellis/multi-language-edgeimpulse-tutorial-vision-cell-phone)
 
 
-Number of Slides: <input type="text" id="myCountLinks" size="6" value="15" >, Seconds for each Slide: <input type="text" id="myCountMax" size="30" value="20" >   Can be a list of seconds example: 17, 20, 24, 20 The last number continues.
+Number of Slides: <input type="text" id="myCountLinks" size="6" value="15" >, Seconds for each Slide: <input type="text" id="myCountMax" size="30" value="10,12" >   Can be a list of seconds example: 17, 20, 24, 20 The last number continues.
  
  
  To convert to any language click <a href="https://translate.google.com/?sl=en&tl=es&op=websites">here</a><br>
@@ -368,8 +368,8 @@ A few Javascript abilites do not work, such as hiding the code. So all the Javas
  let myIndex = 1;
  let myLooper = 0;
  let myCounting = 0;
- let myMainNum = '2,3,4,5,2,3,4,5';  
- let myMainNumLast = 2;
+ let myMainNum = '10,10';  
+ let myMainNumLast = 20;
  let myCountUp = 0;
  let xSlide = 3;
  let myAudio01 = new Audio();
