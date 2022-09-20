@@ -133,7 +133,7 @@ and then create a new Project
 #### 2
 # Dashboard
 
-Check the dashboard far right to see if you have vision set to a single label per item and the latency calculations to the Arduino ML Kit, or whatever borad you will be working with. Note: Some screens must be increased to see the left menu that shows the main EdgeImpulse steps.
+Check the dashboard far right to see if you have vision set to a single label per item and the latency calculations to the Arduino ML Kit, or whatever microcontroller board you will be working with. Note: Some screens must be increased to see the left menu that shows the main EdgeImpulse steps.
 
 <img src="https://user-images.githubusercontent.com/5605614/190931807-c63b069a-307e-454b-998e-839cde729637.png" title="Check Dashboard" width=400 />
 
@@ -142,7 +142,7 @@ Check the dashboard far right to see if you have vision set to a single label pe
 
 #### 3
 # Connect Device  
-Select Devices. For this demonstration we will connect a cell phone to edgeimpulse instead of your Arduino ML kit. Click "Connect a Device"
+Select Devices. For this demonstration we will connect a cell phone to EdgeImpulse instead of your Arduino ML kit. Click "Connect a Device"
 
 <img src="https://user-images.githubusercontent.com/5605614/190931865-eabede2e-8e10-4117-bf73-c1fe8f2c0d21.png" title="Connect a device" width=400 />
 
@@ -158,7 +158,7 @@ Many students will have QR code reading ability on their cell phones. Read the Q
 
 <img src="https://user-images.githubusercontent.com/5605614/190932524-d2c92bff-5ee6-4b2d-bf19-d4c423a584b9.png" title="QR code loads" width=300 />
 
-
+Click "Allow Permissions"
 
 <img src="https://user-images.githubusercontent.com/5605614/190932534-3966d36a-18fb-4004-aa35-6c529a520765.png" title="Permissions" width=300 />
 
@@ -168,7 +168,7 @@ Many students will have QR code reading ability on their cell phones. Read the Q
 #### 4
 # Edge Impulse Web App Unknown
 
-Make sure the label says "unknown" before taking about 50 images of things that do not look like "pens". Note: There is a small advantage to make you labels numerical by putting a number directly before the label "0unknown"
+Make sure the label says "unknown" before taking about 50 images of things that do not look like "pens". Note: There is a small advantage to make your labels numerical by putting a number directly before the label. For example:  "0unknown"
  
 <img src="https://user-images.githubusercontent.com/5605614/190932549-b12f03d2-0416-4d1f-9966-ea1df91285b2.png" title="Unknown" width=300 />
 
@@ -178,7 +178,7 @@ Make sure the label says "unknown" before taking about 50 images of things that 
 #### 5
 # Edge Impulse Web App Pen
 
-Make sure the label says "pen" before taking about 30 images of pens or pencils. Note: There is a small advantage to make you labels numerical by putting a number directly before the label "1pen", etc if you have more labels "2stapler"
+Make sure the label says "pen" before taking about 30 images of pens or pencils. Note: There is a small advantage to make you labels numerical by putting a number directly before the label for example: "1pen", if you have more labels "2stapler" etc. For later coding this allows checking the first digit to see what the whole label is. 
 
 <img src="https://user-images.githubusercontent.com/5605614/190932565-18a1cd7a-e056-4f85-805d-e19b13d1a102.png" title="Pen" width=300 />
 
@@ -199,7 +199,9 @@ Many students mess up and forget to label the items. You can manually edit the l
 #### 7
 # Design your Impulse (Machine Learning Model)
 Select Design Impulse 
-This page looks complex but we are just going to use the defaults. 96 x 96 image max would be 320 x 320 note it is always square. For both "Add a Processing Block" and "Add a lrearning Block" we are just going to use the default identified with a yellow star. Make sure you check that you only have 2 labels for this demo and that you click "Save Impulse"
+This page looks complex but we are just going to use the defaults. 96 x 96 image (the maximum image would be 320 x 320 but wont work on many devices). Note the image  is always square.
+ 
+ For both "Add a Processing Block" and "Add a learning Block" we are just going to use the default identified with a yellow star. Make sure you check that you only have 2 labels (unknown and pen) for this demo and that you click "Save Impulse"
 
 <img src="https://user-images.githubusercontent.com/5605614/190932775-779d6926-d510-4ab4-973a-d37c23ba127f.png" title="Impulse Design" width=400 />
 
@@ -208,7 +210,7 @@ This page looks complex but we are just going to use the defaults. 96 x 96 image
 
 #### 8
 # Image Features
-Select Image and then click "Save Parameters" and then click "Generate Features". IT takes a few minutes to show the graph "Feature Explorer" See if your data looks like it will be easily seperated.
+Select Image and then click "Save Parameters" and then click "Generate Features". It takes a few minutes to show the graph "Feature Explorer" See if your data looks like it will be easily seperated.
 
 
 <img src="https://user-images.githubusercontent.com/5605614/190932896-2894d08c-42e4-40bf-b2f8-699435c0332b.png" title="Image Features" width=400 />
@@ -221,7 +223,7 @@ Select Image and then click "Save Parameters" and then click "Generate Features"
 
 #### 9
 # Transfer Learning
-Select Transfer learning and then change the Training Cycles from 20 to 200, Select Auto balance Dataset and Data Augmentation and click "Start Training" This step might take several minutes. Check the loss if you can read it. Hopefully is is gracefully reducing. The smaller the loss is the relatively better your dataset is learning. When finished your model will show the accuracy, Confusiion Matrix which is faily unconfusing to understand and the Data Explorer which gives a visual graph of how well your data has been sperated into distinct sets.
+Select Transfer learning and then change the Training Cycles from 20 to 200, Select Auto balance Dataset and Data Augmentation and click "Start Training" This step might take several minutes. Check the "loss" if you can read it. Hopefully is is gracefully reducing. The smaller the loss is, the relatively better your dataset is learning. When finished, your model will show the accuracy, Confusion Matrix which is faily easy to understand and the Data Explorer which gives a visual graph of how well your data has been sperated into distinct sets.
  
 <img src="https://user-images.githubusercontent.com/5605614/190945162-03662614-cdeb-43ec-92fa-0fe9201ec8ce.png" title="Transfer Learning" width=400 />
  
@@ -233,7 +235,7 @@ Select Transfer learning and then change the Training Cycles from 20 to 200, Sel
 Choose Live Classification  
 Choose a test sample, preferably one that has the pen in it first. 
 
-Note: For the later WASM example that on live features it shows the RAW FEATURES. Copying this data stream will be useeful later.
+Note: For the later WASM example the RAW FEATURES will be useful to copy for later.
  
 <img src="https://user-images.githubusercontent.com/5605614/190945290-6d11060f-0e88-4b8a-9f09-0d06eac74baf.png" title="Live Classification" width=400 />
 
@@ -241,7 +243,7 @@ Note: For the later WASM example that on live features it shows the RAW FEATURES
 <hr>
 
 #### 11
-# Check you data using your cell phone loaded with the EdgeImpulse web App
+# Check you data using your cell phone loaded with the EdgeImpulse Web App
 
 Back to your cell phone which you might have to re-connect to edgeImpulse. Click the button "Switch to Classification"
 
@@ -269,7 +271,7 @@ Show many objects and see the percent in decimal format 0.73 = 73%. Notice how f
 #### 12
 # Check you data using EdgeImpulse WASM (web Assembly Language)
 
-For this optional but well worth it step you would need an HTTPS web server like github that has be converted to show gitpages. Very easy in github select "settings" then pages then change "none" to "master" and save, then wait 30 seconds and refresh to see your website URL.
+For this optional but well worth it step you would need an HTTPS web server like github that has be converted to show gitpages. Very easy in github: select "settings" then pages then change "none" to "master" and save, then wait 30 seconds and refresh to see your website URL.
 
 On EdgeImpulse select "Deployment" choose "WASM and click "Build" look in your downloads folder.
  
@@ -296,12 +298,12 @@ Paste your RAW FEATURES that you copied from the "Live Classification" into the 
 #### 13
 # Check you data using Rocksetta index.html and EdgeImpulse WASM
 
-On your HTTPS webserver (I use gitpages) browser folder you uploaded with the edgeImpulse WASM code, replace the index.html file with my (Twitter @Rocksetta) Javascript HTML WebCam Demo page That can be dowloaded at  [downloads/index.html](downloads/index.html)
+On your HTTPS webserver (I use gitpages) the "browser" folder you uploaded with the edgeImpulse WASM code, replace the index.html file with my (Twitter @Rocksetta) Javascript HTML WebCam Demo page That can be dowloaded at  [downloads/index.html](downloads/index.html)
  
 
  Then replace the index.html file with this file that I made which uses the computers webcam  [downloads/index.html](downloads/index.html)
  
- What you have is a webpage that can be edited but is similar to the Cell Phone EdgeImpulse web App that you can use from a desktop computer or a cell phone that allows you to test out your edgeimpulse analysis on real data.
+ What you have is a webpage that can be edited but is similar to the Cell Phone EdgeImpulse Web App that you can use from a desktop computer or a cell phone that allows you to test out your edgeimpulse analysis on real data.
 
 
  
