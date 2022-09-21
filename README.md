@@ -349,6 +349,7 @@ function mySetup(){
    myMainNum = document.getElementById('myCountMax').value.split(','); 
    console.log('myMainNum')
    console.log(myMainNum)
+   console.log('myIndex, myMainNumLast, myMainNum[myCounting]')
    myAudio01.pause();
    myAudio01.currentTime = 0;  
    myIndex = 0;  
@@ -362,8 +363,7 @@ function carousel() {
   var i;
 ;
   myIndex++;
-  console.log('myIndex, myMainNumLast, myMainNum[myCounting]')
-  console.log(myIndex +', '+ myMainNumLast +', '+  myMainNum[myCounting])
+  console.log(myIndex +', '+ myCounting +', '+ myMainNumLast +', '+  myMainNum[myCounting])
   if (myIndex > xSlide) {myIndex = xSlide};    
   window.location.href='#'+myIndex;
   myCountDown();
