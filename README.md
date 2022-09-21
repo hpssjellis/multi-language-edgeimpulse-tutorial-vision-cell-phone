@@ -119,7 +119,7 @@ Number of Slides: <input type="text" id="myCountLinks" size="6" value="15" >, Se
 #### 1
 # Intro to Edge Impulse before using the Arduino Machine Learning Kit.
 
-First login to <a href="https://edgeimpulse.com/">edgeImpulse.com</a> and then create a new Project
+First login or signup to <a href="https://edgeimpulse.com/">edgeImpulse.com</a> and then create a new Project
 
 <img src="https://user-images.githubusercontent.com/5605614/190931142-55689c3c-124b-4558-ba9c-d025ef148461.png" title="EdgeImpulse login or setup" width=400 /> <img src="https://user-images.githubusercontent.com/5605614/190931666-39a92ca7-e8d6-435c-86ac-ef1ed825008d.png" title="Create new project" width=500 />
 
