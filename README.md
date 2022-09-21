@@ -362,10 +362,8 @@ function carousel() {
   var i;
 ;
   myIndex++;
-  console.log('myIndex, xSlide')
-  console.log(myIndex)
-  console.log(',')
-  console.log(xSlide)
+  console.log('myIndex, myMainNumLast, myMainNum[myCounting]')
+  console.log(myIndex +', '+ myMainNumLast +', '+  myMainNum[myCounting])
   if (myIndex > xSlide) {myIndex = xSlide};    
   window.location.href='#'+myIndex;
   myCountDown();
