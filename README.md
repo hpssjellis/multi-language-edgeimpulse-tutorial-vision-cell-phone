@@ -114,10 +114,8 @@ Number of Slides: <input type="text" id="myCountLinks" size="6" value="15" >, Se
 
 
 
-
-
 #### 1
-# Intro to Edge Impulse before using the Arduino Machine Learning Kit.
+# Make a Vision Classification (unknown and pen) EdgeImpulse Machine Learning model using your cell phone
 
 First login or signup to <a href="https://edgeimpulse.com/">edgeImpulse.com</a> and then create a new Project
 
