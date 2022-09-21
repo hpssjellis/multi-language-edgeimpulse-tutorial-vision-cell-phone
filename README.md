@@ -18,7 +18,7 @@ Number of Slides: <input type="text" id="myCountLinks" size="6" value="15" >, Se
  For example This page in: <a href="https://hpssjellis-github-io.translate.goog/multi-language-edgeimpulse-tutorial-vision-cell-phone/?_x_tr_sl=en&_x_tr_tl=fr&_x_tr_hl=en&_x_tr_pto=wapp">French</a>, <a href="https://hpssjellis-github-io.translate.goog/multi-language-edgeimpulse-tutorial-vision-cell-phone/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=en&_x_tr_pto=wapp">Spanish</a>, Original in <a href="https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/">English</a>
  
  <input type=button value="Mr. Ellis in English" onclick="{ 
-   document.getElementById('myCountMax').value = '18,23,25,18,16,18,32,15,27,27,27,36,20,20,20';  
+   document.getElementById('myCountMax').value = '18,23,25,18,16,18,32,14,34,20,27,36,20,20,20';  
    mySetup();                                             
    myAudio01 = new Audio('recorded-english.m4a');
    myAudio01.play(); 
