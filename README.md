@@ -22,7 +22,7 @@ Number of Slides: <input type="text" id="myCountLinks" size="6" value="15" >, Se
  
  <input type=button value="Mr. Ellis in English" onclick="{ 
    document.getElementById('myCountMax').value = '16,26,23,20,15,18,30,15,27,27,27,36,20,20,20';  
-   ;                                             //1,2, 3, 4, 5, 6, 7, 8, 9, 10,11,12,13,14,15,16,17,18,19,20       
+   ;                                            // 1, 2, 3, 4, 5, 6, 7, 8, 9,10,11,12,13,14,15,16,17,18,19,20       
    mySetup();                                             
    myAudio01 = new Audio('recorded-english.m4a');
    myAudio01.play(); 
