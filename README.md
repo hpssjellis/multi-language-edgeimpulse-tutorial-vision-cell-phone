@@ -368,7 +368,7 @@ function carousel() {
   window.location.href='#'+myIndex;
   myCountDown();
   myCounting = setInterval(myCountDown, 1000);
-  if (Number.isInteger( parseInt(myMainNum[myCounting]) ) ) {myMainNumLast = parseInt(myMainNum[myCounting]) }  
+  if (Number.isInteger( parseInt(myMainNum[myIndex]) ) ) {myMainNumLast = parseInt(myMainNum[myIndex]) }  
   myLooper = setTimeout(carousel, myMainNumLast*1000); 
 }
   
