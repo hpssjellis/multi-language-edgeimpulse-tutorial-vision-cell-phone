@@ -349,7 +349,7 @@ function mySetup(){
    myMainNum = document.getElementById('myCountMax').value.split(','); 
    console.log('myMainNum')
    console.log(myMainNum)
-   console.log('myIndex, myMainNumLast, myMainNum[myCounting]')
+   console.log('myIndex, myCounting myMainNumLast, myMainNum[myCounting]')
    myAudio01.pause();
    myAudio01.currentTime = 0;  
    myIndex = 0;  
