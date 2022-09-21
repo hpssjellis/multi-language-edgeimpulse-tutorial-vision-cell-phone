@@ -350,7 +350,7 @@ function mySetup(){
    myMainNumLast = myMainNum[0]
    console.log('myMainNum')
    console.log(myMainNum)
-   console.log('myIndex, myCounting myMainNumLast, myMainNum[myCounting]')
+   console.log('myIndex, myCounting myMainNumLast, myMainNum[myIndex]')
    myAudio01.pause();
    myAudio01.currentTime = 0;  
    myIndex = 0;  
@@ -364,7 +364,7 @@ function carousel() {
   var i;
 ;
   myIndex++;
-  console.log(myIndex +', '+ myCounting +', '+ myMainNumLast +', '+  myMainNum[myCounting])
+  console.log(myIndex +', '+ myCounting +', '+ myMainNumLast +', '+  myMainNum[myIndex])
   if (myIndex > xSlide) {myIndex = xSlide};    
   window.location.href='#'+myIndex;
   myCountDown();
