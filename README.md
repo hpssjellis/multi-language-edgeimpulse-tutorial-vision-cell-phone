@@ -21,7 +21,7 @@ Number of Slides: <input type="text" id="myCountLinks" size="6" value="15" >, Se
  For example This page in: <a href="https://hpssjellis-github-io.translate.goog/multi-language-edgeimpulse-tutorial-vision-cell-phone/?_x_tr_sl=en&_x_tr_tl=fr&_x_tr_hl=en&_x_tr_pto=wapp">French</a>, <a href="https://hpssjellis-github-io.translate.goog/multi-language-edgeimpulse-tutorial-vision-cell-phone/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=en&_x_tr_pto=wapp">Spanish</a>, Original in <a href="https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/">English</a>
  
  <input type=button value="Mr. Ellis in English" onclick="{ 
-   document.getElementById('myCountMax').value = '18,26,23,20,15,18,30,15,27,27,27,36,20,20,20';   // this is fine 
+   document.getElementById('myCountMax').value = '18,26,23,20,15,18,30,15,27,27,27,36,20,20,20';  
    mySetup();                                             
    myAudio01 = new Audio('recorded-english.m4a');
    myAudio01.play(); 
@@ -370,7 +370,7 @@ function carousel() {
   window.location.href='#'+myIndex;
   myCountDown();
   myCounting = setInterval(myCountDown, 1000);
-  if (Number.isInteger( parseInt(myMainNum[myCounting]) ) ) {myMainNumLast = parseInt(myMainNum[myCounting]) }  // check if integer or use last one
+  if (Number.isInteger( parseInt(myMainNum[myCounting]) ) ) {myMainNumLast = parseInt(myMainNum[myCounting]) }  
   myLooper = setTimeout(carousel, myMainNumLast*1000); 
 }
   
