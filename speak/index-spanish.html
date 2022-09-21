@@ -1,0 +1,330 @@
+
+
+
+
+
+<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+
+<script>
+    function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,fr,de,ru', layout:google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+
+    }
+</script>
+
+
+
+<h1 align=center>t2a10-translate-name</h1>
+
+
+
+<input  type="button" value="initilize speak" onclick="{  
+   let myVoice = 'Russian Female'
+   responsiveVoice.speak(document.getElementById('google_translate_element').innerText, myVoice, {pitch: 1, rate: 1, volume : 1})                                              
+}"><br><br>
+
+
+
+<div id="google_translate_element">1
+Intro to Edge Impulse before using the Arduino Machine Learning Kit.
+First login to edgeImpulse.com and then create a new Project
+
+EdgeImpulse login or setup Create new project
+
+2
+Dashboard
+Check the dashboard far right to see if you have vision set to a single label per item and the latency calculations to the Arduino ML Kit, or whatever microcontroller board you will be working with. Note: Some screens must be increased to see the left menu that shows the main EdgeImpulse steps.
+
+Check Dashboard
+
+
+
+
+
+
+
+3
+Connect Device
+Select Devices. For this demonstration we will connect a cell phone to EdgeImpulse instead of your Arduino ML kit. Click “Connect a Device”. Then click Generate QR Code”
+
+Connect a device Generate QR Code
+
+Many students will have QR code reading ability on their cell phones. Read the QR code and let it load the page.
+
+Click “Allow Permissions”
+
+QR code loads Permissions
+
+
+
+
+
+
+
+4
+Edge Impulse Web App Data Collection: Label Unknown
+Make sure the label says “unknown” before taking about 50 images of things that do not look like “pens”. Note: There is a small advantage to make your labels numerical by putting a number directly before the label. For example: “0unknown”
+
+Unknown
+
+
+
+
+
+
+
+5
+Edge Impulse Web App Data Collection: Label Pen
+Make sure the label says “pen” before taking about 30 images of pens or pencils. Note: There is a small advantage to make you labels numerical by putting a number directly before the label for example: “1pen”, if you have more labels “2stapler” etc. For later coding this allows checking the first digit to see what the whole label is.
+
+Pen
+
+
+
+
+
+
+
+6
+Data Acquisition and Labels
+Select Data Acquisition.
+Many students mess up and forget to label the items. You can manually edit the label names, also filter by names and select multiple filters. (But be carefully you don’t really mess up the labels)
+
+Data and labels
+
+
+
+
+
+7
+Design your Impulse (Machine Learning Model)
+Select Design Impulse This page looks complex but we are just going to use the defaults. 96 x 96 image (the maximum image would be 320 x 320 but wont work on many devices). Note the image is always square.
+
+For both “Add a Processing Block” and “Add a learning Block” we are just going to use the default identified with a yellow star. Make sure you check that you only have 2 labels (unknown and pen) for this demo and that you click “Save Impulse”
+
+Impulse Design
+
+
+
+
+8
+Image Features
+Select Image and then click “Save Parameters” and then click “Generate Features”. It takes a few minutes to show the graph “Feature Explorer” See if your data looks like it will be easily seperated.
+
+Image Features Features finished
+
+9
+Transfer Learning
+Select Transfer learning and then change the Training Cycles from 20 to 200, Select Auto balance Dataset and Data Augmentation and click “Start Training” This step might take several minutes. Check the “loss” if you can read it. Hopefully is is gracefully reducing. The smaller the loss is, the relatively better your dataset is learning. When finished, your model will show the accuracy, Confusion Matrix which is faily easy to understand and the Data Explorer which gives a visual graph of how well your data has been sperated into distinct sets.
+
+Transfer Learning
+
+10
+Check your data, on EdgeImpulse with the testing dataset.
+Choose Live Classification
+Choose a test sample, preferably one that has the pen in it first.
+
+Note: For the later WASM example the RAW FEATURES will be useful to copy for later.
+
+Live Classification
+
+11
+Check you data using your cell phone loaded with the EdgeImpulse Web App
+Back to your cell phone which you might have to re-connect to edgeImpulse. Click the button “Switch to Classification”. Scan many objects and see the percent in decimal format 0.73 = 73%. Notice how fast the model analyses objects.
+
+Switch to Classification Inference1 Inference2 Inference3
+
+
+
+
+
+
+
+12
+Check you data using EdgeImpulse WASM (Web Assembly Language)
+For this optional, but well worth it, step you would need an HTTPS web server like github that has be converted to show gitpages. Very easy in github: select “settings” then pages then change “none” to “master” and save, then wait 30 seconds and refresh to see your website URL.
+
+On EdgeImpulse select “Deployment” choose “WASM and click “Build”. Then look in your downloads folder. Then unzip the downloaded folder and upload the “browser” folder to your HTTPS webserver.
+
+WASM Deployment unzip WASM for browser
+
+
+
+
+
+
+
+13
+Check you data using EdgeImpulse WASM (web Assembly Language)
+Reminder: you would need an HTTPS web server such as github setup to use Gitpages.
+
+Note: This step will not work from your computer even though it looks like the page loads fine.
+
+Paste your RAW FEATURES that you copied from the “Live Classification” into the test box of the WASM index.html and see if you get similar results to what you got with the Live Classification.
+
+EdgeImpulse and Rocksetta WASM
+
+14
+Check you data using Rocksetta index.html and EdgeImpulse WASM
+On your HTTPS webserver (I use gitpages) the “browser” folder you uploaded with the edgeImpulse WASM code, replace the index.html file with my (Twitter @Rocksetta) Javascript HTML WebCam Demo page That can be dowloaded at downloads/index.html
+
+Then replace the index.html file with this file that I made which uses the computers webcam downloads/index.html
+
+What you have is a webpage that can be edited but is similar to the Cell Phone EdgeImpulse Web App that you can use from a desktop computer or a cell phone that allows you to test out your edgeimpulse analysis on real data. The second image is an animated gif file showing what the rocksetta index.html file makes the EdgeImpulse WASM look like.
+
+Rocksetta WASM Rocksetta-Wasm-gif
+
+15
+End of presentation</div>
+1
+Intro to Edge Impulse before using the Arduino Machine Learning Kit.
+First login to edgeImpulse.com and then create a new Project
+
+EdgeImpulse login or setup Create new project
+
+2
+Dashboard
+Check the dashboard far right to see if you have vision set to a single label per item and the latency calculations to the Arduino ML Kit, or whatever microcontroller board you will be working with. Note: Some screens must be increased to see the left menu that shows the main EdgeImpulse steps.
+
+Check Dashboard
+
+
+
+
+
+
+
+3
+Connect Device
+Select Devices. For this demonstration we will connect a cell phone to EdgeImpulse instead of your Arduino ML kit. Click “Connect a Device”. Then click Generate QR Code”
+
+Connect a device Generate QR Code
+
+Many students will have QR code reading ability on their cell phones. Read the QR code and let it load the page.
+
+Click “Allow Permissions”
+
+QR code loads Permissions
+
+
+
+
+
+
+
+4
+Edge Impulse Web App Data Collection: Label Unknown
+Make sure the label says “unknown” before taking about 50 images of things that do not look like “pens”. Note: There is a small advantage to make your labels numerical by putting a number directly before the label. For example: “0unknown”
+
+Unknown
+
+
+
+
+
+
+
+5
+Edge Impulse Web App Data Collection: Label Pen
+Make sure the label says “pen” before taking about 30 images of pens or pencils. Note: There is a small advantage to make you labels numerical by putting a number directly before the label for example: “1pen”, if you have more labels “2stapler” etc. For later coding this allows checking the first digit to see what the whole label is.
+
+Pen
+
+
+
+
+
+
+
+6
+Data Acquisition and Labels
+Select Data Acquisition.
+Many students mess up and forget to label the items. You can manually edit the label names, also filter by names and select multiple filters. (But be carefully you don’t really mess up the labels)
+
+Data and labels
+
+
+
+
+
+7
+Design your Impulse (Machine Learning Model)
+Select Design Impulse This page looks complex but we are just going to use the defaults. 96 x 96 image (the maximum image would be 320 x 320 but wont work on many devices). Note the image is always square.
+
+For both “Add a Processing Block” and “Add a learning Block” we are just going to use the default identified with a yellow star. Make sure you check that you only have 2 labels (unknown and pen) for this demo and that you click “Save Impulse”
+
+Impulse Design
+
+
+
+
+8
+Image Features
+Select Image and then click “Save Parameters” and then click “Generate Features”. It takes a few minutes to show the graph “Feature Explorer” See if your data looks like it will be easily seperated.
+
+Image Features Features finished
+
+9
+Transfer Learning
+Select Transfer learning and then change the Training Cycles from 20 to 200, Select Auto balance Dataset and Data Augmentation and click “Start Training” This step might take several minutes. Check the “loss” if you can read it. Hopefully is is gracefully reducing. The smaller the loss is, the relatively better your dataset is learning. When finished, your model will show the accuracy, Confusion Matrix which is faily easy to understand and the Data Explorer which gives a visual graph of how well your data has been sperated into distinct sets.
+
+Transfer Learning
+
+10
+Check your data, on EdgeImpulse with the testing dataset.
+Choose Live Classification
+Choose a test sample, preferably one that has the pen in it first.
+
+Note: For the later WASM example the RAW FEATURES will be useful to copy for later.
+
+Live Classification
+
+11
+Check you data using your cell phone loaded with the EdgeImpulse Web App
+Back to your cell phone which you might have to re-connect to edgeImpulse. Click the button “Switch to Classification”. Scan many objects and see the percent in decimal format 0.73 = 73%. Notice how fast the model analyses objects.
+
+Switch to Classification Inference1 Inference2 Inference3
+
+
+
+
+
+
+
+12
+Check you data using EdgeImpulse WASM (Web Assembly Language)
+For this optional, but well worth it, step you would need an HTTPS web server like github that has be converted to show gitpages. Very easy in github: select “settings” then pages then change “none” to “master” and save, then wait 30 seconds and refresh to see your website URL.
+
+On EdgeImpulse select “Deployment” choose “WASM and click “Build”. Then look in your downloads folder. Then unzip the downloaded folder and upload the “browser” folder to your HTTPS webserver.
+
+WASM Deployment unzip WASM for browser
+
+
+
+
+
+
+
+13
+Check you data using EdgeImpulse WASM (web Assembly Language)
+Reminder: you would need an HTTPS web server such as github setup to use Gitpages.
+
+Note: This step will not work from your computer even though it looks like the page loads fine.
+
+Paste your RAW FEATURES that you copied from the “Live Classification” into the test box of the WASM index.html and see if you get similar results to what you got with the Live Classification.
+
+EdgeImpulse and Rocksetta WASM
+
+14
+Check you data using Rocksetta index.html and EdgeImpulse WASM
+On your HTTPS webserver (I use gitpages) the “browser” folder you uploaded with the edgeImpulse WASM code, replace the index.html file with my (Twitter @Rocksetta) Javascript HTML WebCam Demo page That can be dowloaded at downloads/index.html
+
+Then replace the index.html file with this file that I made which uses the computers webcam downloads/index.html
+
+What you have is a webpage that can be edited but is similar to the Cell Phone EdgeImpulse Web App that you can use from a desktop computer or a cell phone that allows you to test out your edgeimpulse analysis on real data. The second image is an animated gif file showing what the rocksetta index.html file makes the EdgeImpulse WASM look like.
+
+Rocksetta WASM Rocksetta-Wasm-gif
+
+15
+End of presentation
