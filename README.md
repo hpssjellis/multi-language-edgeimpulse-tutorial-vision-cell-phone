@@ -177,7 +177,7 @@ Make sure the label says "pen" before taking about 30 images of pens or pencils.
 # Data Acquisition and Labels
 
 Select Data Acquisition.  
-Many students mess up and forget to label the items. You can manually edit the label names,  also filter by names and select multiple filters. (But be carefully you don't really mess up the labels)
+Many students mess up and forget to label the items. You can manually edit the label names,  also filter by names and select multiple filters. (But be careful here that you don't really mess up things up!)
 
 <img src="https://user-images.githubusercontent.com/5605614/190932155-952cbfa1-9609-4482-9e52-61fee6be4833.png" title="Data and labels" width=600 />
 
