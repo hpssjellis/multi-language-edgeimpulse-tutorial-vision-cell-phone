@@ -2,7 +2,7 @@
 ### Vanilla Javascript Lightning Talk Pech Kucha Markdown HTML README.md
 
 
-##### version 1.3.3-104
+##### version 1.3.4-105
 
 Fork this repo, fill in your markdown and <html> for the 15 slides (max 20 slides), record your presentation and save it as ```recorded-talk.m4a``` (or change the code to reflect the new name.)
  
@@ -347,6 +347,7 @@ function mySetup(){
    document.getElementById('myStick').style.display = 'none';                                                 
    xSlide  = document.getElementById('myCountLinks').value; 
    myMainNum = document.getElementById('myCountMax').value.split(','); 
+   myMainNumLast = myMainNum[0]
    console.log('myMainNum')
    console.log(myMainNum)
    console.log('myIndex, myCounting myMainNumLast, myMainNum[myCounting]')
