@@ -115,7 +115,7 @@ Number of Slides: <input type="text" id="myCountLinks" size="6" value="15" >, Se
 
 
 #### 1
-# Make a Vision Classification (unknown and pen) EdgeImpulse Machine Learning model using your cell phone
+# Make a Vision Classification (unknown and pen) EdgeImpulse Machine Learning model using your cell phone before using the Arduino ML Kit.
 
 First login or signup to <a href="https://edgeimpulse.com/">edgeImpulse.com</a> and then create a new Project
 
