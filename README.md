@@ -2,7 +2,7 @@
 ### Vanilla Javascript Lightning Talk Pech Kucha Markdown HTML README.md
 
 
-##### version 1.2.0-97
+##### version 1.2.1-98
 
 Fork this repo, fill in your markdown and <html> for the 15 slides (max 20 slides), record your presentation and save it as ```recorded-talk.m4a``` (or change the code to reflect the new name.)
  
@@ -129,9 +129,9 @@ First login or signup to <a href="https://edgeimpulse.com/">edgeImpulse.com</a> 
 
 Check the dashboard far right to see if you have vision set to a single label per item and the latency calculations to the Arduino ML Kit, or whatever microcontroller board you will be working with. Note: Some screens must be increased to see the left menu that shows the main EdgeImpulse steps.
 
-<img src="https://user-images.githubusercontent.com/5605614/190931807-c63b069a-307e-454b-998e-839cde729637.png" title="Check Dashboard" width=500 /> <img src="https://user-images.githubusercontent.com/5605614/191381569-e775786f-43c3-46b3-87bc-f10ebb24acb5.png****" title="Check Dashboard" width=500 />
+<img src="https://user-images.githubusercontent.com/5605614/190931807-c63b069a-307e-454b-998e-839cde729637.png" title="Check Dashboard" width=500 /> <img src="https://user-images.githubusercontent.com/5605614/191381569-e775786f-43c3-46b3-87bc-f10ebb24acb5.png" title="Latency" width=500 />
  
- Show many objects and see the percent in decimal format 0.73 = 73%. Notice how fast the model analyses objects. 
+
  
 <br><br><br><br><br>
 <hr>
