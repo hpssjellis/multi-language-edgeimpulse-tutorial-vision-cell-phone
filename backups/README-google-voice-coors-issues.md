@@ -346,7 +346,7 @@ Note:
 A few Javascript abilites do not work, such as hiding the code. So all the Javascript not in buttons is below. 
 
 
-<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
 
 <script>
