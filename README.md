@@ -27,15 +27,10 @@ Number of Slides: <input type="text" id="myCountLinks" size="6" value="15" >, Se
    myAudio01.play(); 
    carousel();                                                
 }">
- <input type=button value="Mr. Ellis in English no steps" onclick="{   
-   mySetup();                                             
-   myAudio01 = new Audio('recorded-english.m4a');
-   myAudio01.play(); 
-   carousel();                                                
-}">
 
 
- 
+
+
  
 <div id="myNumSlides" style=" position:sticky; top:0px; left:20px; height:25px; "> ...</div>  <br>
 
@@ -370,7 +365,6 @@ function carousel() {
   myCounting = setInterval(myCountDown, 1000);
   if (Number.isInteger( parseInt(myMainNum[myIndex-1]) ) ) {
      myMainNumLast = parseInt(myMainNum[myIndex-1]) 
-     console.log(myMainNumLast)
   }  
   myLooper = setTimeout(carousel, myMainNumLast*1000); 
 }
