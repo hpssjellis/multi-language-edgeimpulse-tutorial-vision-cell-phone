@@ -33,7 +33,7 @@ Number of Slides: <input type="text" id="myCountLinks" size="6" value="15" >, Se
    myAudio01.play(); 
    carousel();                                                
 }">
- <input type=button value="Mr. Ellis in English2" onclick="{                                                             
+ <input type=button value="Mr. Ellis in English3" onclick="{                                                             
    document.getElementById('myCountMax').value = '18,26,23,20,15,18,30,15,27,27,27,36,20,20,20';                                                      myMainNum = '18,26,23,20,15,18,30,15,27,27,27,36,20,20,20';   
    mySetup();                                             
    myAudio01 = new Audio('recorded-english.m4a');
