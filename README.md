@@ -353,7 +353,7 @@ function mySetup(){
    console.log('myIndex, myMainNumLast, myMainNum[myIndex]')
    myAudio01.pause();
    myAudio01.currentTime = 0;  
-   myIndex = -1;  
+   myIndex = 0;  
    clearInterval(myLooper);  
    myCountUp = -1;
 } 
@@ -369,8 +369,8 @@ function carousel() {
   window.location.href='#'+myIndex;
   myCountDown();
   myCounting = setInterval(myCountDown, 1000);
-  if (Number.isInteger( parseInt(myMainNum[myIndex]) ) ) {
-     myMainNumLast = parseInt(myMainNum[myIndex]) 
+  if (Number.isInteger( parseInt(myMainNum[myIndex-1]) ) ) {
+     myMainNumLast = parseInt(myMainNum[myIndex-1]) 
      console.log(myMainNumLast)
   }  
   myLooper = setTimeout(carousel, myMainNumLast*1000); 
