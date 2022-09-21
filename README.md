@@ -21,25 +21,19 @@ Number of Slides: <input type="text" id="myCountLinks" size="6" value="15" >, Se
  For example This page in: <a href="https://hpssjellis-github-io.translate.goog/multi-language-edgeimpulse-tutorial-vision-cell-phone/?_x_tr_sl=en&_x_tr_tl=fr&_x_tr_hl=en&_x_tr_pto=wapp">French</a>, <a href="https://hpssjellis-github-io.translate.goog/multi-language-edgeimpulse-tutorial-vision-cell-phone/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=en&_x_tr_pto=wapp">Spanish</a>, Original in <a href="https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/">English</a>
  
  <input type=button value="Mr. Ellis in English" onclick="{ 
-   document.getElementById('myCountMax').value = '18,26,23,20,15,18,30,15,27,27,27,36,20,20,20';   
+   document.getElementById('myCountMax').value = '18,26,23,20,15,18,30,15,27,27,27,36,20,20,20';   // this is fine 
    mySetup();                                             
    myAudio01 = new Audio('recorded-english.m4a');
    myAudio01.play(); 
    carousel();                                                
 }">
- <input type=button value="Mr. Ellis in English2" onclick="{   
+ <input type=button value="Mr. Ellis in English no steps" onclick="{   
    mySetup();                                             
    myAudio01 = new Audio('recorded-english.m4a');
    myAudio01.play(); 
    carousel();                                                
 }">
- <input type=button value="Mr. Ellis in English3" onclick="{                                                             
-   document.getElementById('myCountMax').value = '18,26,23,20,15,18,30,15,27,27,27,36,20,20,20';                                                      myMainNum = '18,26,23,20,15,18,30,15,27,27,27,36,20,20,20';   
-   mySetup();                                             
-   myAudio01 = new Audio('recorded-english.m4a');
-   myAudio01.play(); 
-   carousel();                                                
-}"> 
+
 
  
  
@@ -341,6 +335,7 @@ A few Javascript abilites do not work, such as hiding the code. So all the Javas
  let myLooper = 0;
  let myCounting = 0;
  let myMainNum = '10,10';  
+ let myMainNum2 = '10,10'; 
  let myMainNumLast = 20;
  let myCountUp = 0;
  let xSlide = 3;
@@ -367,6 +362,8 @@ function carousel() {
   var i;
 ;
   myIndex++;
+  console.log('myIndex')
+  console.log(myIndex)
   if (myIndex > xSlide) {myIndex = xSlide};    
   window.location.href='#'+myIndex;
   myCountDown();
@@ -377,6 +374,8 @@ function carousel() {
   
 function myCountDown(){
   myCountUp++;
+  console.log('myCountUp')
+  console.log(myCountUp)
   if (myCountUp >= myMainNumLast ) {
     myCountUp = myMainNumLast;                              
   }
