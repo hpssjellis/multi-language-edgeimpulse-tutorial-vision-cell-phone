@@ -29,13 +29,17 @@ function googleTranslateElementInit() {
 
 
    
+  <input  type="button" value="Speak Page0" onclick="{  
+    responsiveVoice.speak(document.getElementById('myMain').innerText); 
+}"> 
+
+   
   <input  type="button" value="Speak Page1" onclick="{  
     responsiveVoice.speak(document.body.innerText); 
 }"> 
 
   <input  type="button" value="Speak spanish female" onclick="{  
-   let myVoice = 'Spanish Female'
-   responsiveVoice.speak(document.body.innerText, myVoice, {pitch: 1, rate: 1, volume : 1});   
+   responsiveVoice.speak(document.body.innerText, 'Spanish Female', {pitch: 2, rate: 2, volume : 1});   
 }"> 
 
   <input  type="button" value="Speak Page3" onclick="{  
@@ -43,14 +47,22 @@ function googleTranslateElementInit() {
 }"> 
 
 
+  <input  type="button" value="Speak Page5" onclick="{  
+    var voicelist = responsiveVoice.getVoices();
+    console.log(voicelist[0])
+
+}"> 
+
   <input  type="button" value="Speak Page4" onclick="{  
-    voicelist = responsiveVoice.getVoices();
+    var voicelist = responsiveVoice.getVoices();
     console.log(voicelist[0])
     console.log(voicelist[1].name)
     console.log(voicelist[2])
     console.log(voicelist[3])
     console.log(voicelist[4])
 }"> 
+
+
 
 
 
@@ -154,7 +166,7 @@ function googleTranslateElementInit() {
 
 
 
-
+< div id="myMain">
 
 #### 1
 # Make a Vision Classification (unknown and pen) EdgeImpulse Machine Learning model using your cell phone before using the Arduino ML Kit.
@@ -166,6 +178,8 @@ First login or signup to <a href="https://edgeimpulse.com/">edgeImpulse.com</a> 
 
 <hr>
 
+
+</div>
 #### 2
 # Dashboard
 
