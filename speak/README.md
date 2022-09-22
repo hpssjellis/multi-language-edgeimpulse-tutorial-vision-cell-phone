@@ -48,8 +48,7 @@ function googleTranslateElementInit() {
 
 
   <input  type="button" value="Speak Page5" onclick="{  
-    alert(responsiveVoice.getVoices()[0])
-
+    alert(responsiveVoice.getVoices()[0]);
 }"> 
 
 
