@@ -2,7 +2,7 @@
 <html lang="en-US">
 <body>
 
-<h1>My Web Page</h1>
+<h1>My Web Page v001</h1>
 
 <p>Hello everybody!</p>
 
@@ -17,20 +17,18 @@ function googleTranslateElementInit() {
 </script>
 
   
+<input  type="button" value="Google Speak in Spanish" onclick="{  
+   let myVoice = 'Spanish Female'
+   responsiveVoice.speak(document.getElementById('google_translate_element').innerText, myVoice, {pitch: 1, rate: 1, volume : 1})                                              
+}"><br><br>
   
   
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
 
-<script>
-    function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,fr,de,ru', layout:google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
 
-    }
-</script>
   
-  
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 
 <p>You can translate the content of this page by selecting a language in the select box.</p>
 
