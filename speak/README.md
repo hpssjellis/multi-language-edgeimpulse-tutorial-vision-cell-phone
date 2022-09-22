@@ -2,7 +2,7 @@
 ### Vanilla Javascript Lightning Talk Pech Kucha Markdown HTML README.md
 
 
-##### version 2.0.3-125
+##### version 2.0.3-126
 
 
 Demo of this Github Markdown can be viewed at this GitPages site (replace this link with your Gitpages link) [https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/](https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/)
@@ -18,25 +18,30 @@ Number of Slides: <input type="text" id="myCountLinks" size="6" value="15" >, Se
  For example This page in: <a href="https://hpssjellis-github-io.translate.goog/multi-language-edgeimpulse-tutorial-vision-cell-phone/?_x_tr_sl=en&_x_tr_tl=fr&_x_tr_hl=en&_x_tr_pto=wapp">French</a>, <a href="https://hpssjellis-github-io.translate.goog/multi-language-edgeimpulse-tutorial-vision-cell-phone/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=en&_x_tr_pto=wapp">Spanish</a>, Original in <a href="https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/">English</a>
  
  
- <script type="text/javascript">
+<div id="google_translate_element"></div>
+
+<script type="text/javascript">
 function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en'}, 'document.body.innerText');
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
 }
 </script>
 
   
 <input  type="button" value="Google Speak in Spanish" onclick="{  
    let myVoice = 'Spanish Female'
-   responsiveVoice.speak(document.getElementById(document.body).innerText, myVoice, {pitch: 1, rate: 1, volume : 1})                                              
+   responsiveVoice.speak(document.body.innerText, myVoice, {pitch: 1, rate: 1, volume : 1});                                              
 }"><br><br>
 
 <input  type="button" value="Get voices" onclick="{  
      var voicelist = responsiveVoice.getVoices();
-     console.log(voicelist[0])
+     console.log(voicelist)
+     console.log(voicelist[0].name)
+     console.log(voicelist[1].name)
+     console.log(voicelist[2].name)
 }">
  
 <input  type="button" value="Speak only" onclick="{  
-responsiveVoice.speak(document.body.innerText, {pitch: 1, rate: 1, volume : 1}) 
+responsiveVoice.speak(document.body.innerText, {pitch: 1, rate: 1, volume : 1}); 
 }"> 
 
  
