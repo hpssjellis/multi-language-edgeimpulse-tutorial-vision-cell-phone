@@ -26,10 +26,16 @@ function googleTranslateElementInit() {
 }
 </script>
 
+
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
   
 <input  type="button" value="Google Speak in Spanish" onclick="{  
    let myVoice = 'Spanish Female'
    responsiveVoice.speak(document.body.innerText, myVoice, {pitch: 1, rate: 1, volume : 1});                                              
+}"><br><br>
+  
+<input  type="button" value="Responsive voice" onclick="{  
+   responsiveVoice.speak();                                              
 }"><br><br>
 
 <input  type="button" value="Get voices" onclick="{  
@@ -41,7 +47,7 @@ function googleTranslateElementInit() {
 }">
  
 <input  type="button" value="Speak only" onclick="{  
-responsiveVoice.speak(document.body.innerText, {pitch: 1, rate: 1, volume : 1}); 
+    responsiveVoice.speak(document.body.innerText, {pitch: 1, rate: 1, volume : 1}); 
 }"> 
 
  
@@ -359,7 +365,7 @@ A few Javascript abilites do not work, such as hiding the code. So all the Javas
 
   
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+
  
 
 
