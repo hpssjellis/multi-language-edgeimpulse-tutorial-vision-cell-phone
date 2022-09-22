@@ -157,7 +157,7 @@ function googleTranslateElementInit() {
 
 
 
-< div id="myMain">
+<div id="myMain">
 
 #### 1
 # Make a Vision Classification (unknown and pen) EdgeImpulse Machine Learning model using your cell phone before using the Arduino ML Kit.
