@@ -2,7 +2,7 @@
 ### Vanilla Javascript Lightning Talk Pech Kucha Markdown HTML README.md
 
 
-##### version 2.0.2-120
+##### version 2.0.2-121
 
 
 Demo of this Github Markdown can be viewed at this GitPages site (replace this link with your Gitpages link) [https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/](https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/)
@@ -131,7 +131,11 @@ function googleTranslateElementInit() {
 
 
 <!--  This div is important for Google Speak  -->
-<div id="google_translate_element">
+<div id="google_translate_element"> Cool this works
+
+ 
+<!--  IMPORTANT THIS DIV IS THE END OF GOOGLE TRANSLATE AND SPEAK  -->
+ </div>
 
 
 #### 1
@@ -310,9 +314,7 @@ On your HTTPS webserver (I use gitpages) the "browser" folder you uploaded with 
 #### 15
 # End of presentation
  
- 
-<!--  IMPORTANT THIS DIV IS THE END OF GOOGLE TRANSLATE AND SPEAK  -->
- </div>
+
  
 
 <a href="#top">Top of page</a>
