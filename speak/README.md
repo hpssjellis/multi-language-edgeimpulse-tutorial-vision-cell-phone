@@ -17,7 +17,21 @@ Number of Slides: <input type="text" id="myCountLinks" size="6" value="15" >, Se
  To convert to any language click <a href="https://translate.google.com/?sl=en&tl=es&op=websites">here</a><br>
  For example This page in: <a href="https://hpssjellis-github-io.translate.goog/multi-language-edgeimpulse-tutorial-vision-cell-phone/?_x_tr_sl=en&_x_tr_tl=fr&_x_tr_hl=en&_x_tr_pto=wapp">French</a>, <a href="https://hpssjellis-github-io.translate.goog/multi-language-edgeimpulse-tutorial-vision-cell-phone/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=en&_x_tr_pto=wapp">Spanish</a>, Original in <a href="https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/">English</a>
  
- <input type=button value="Mr. Ellis in English" onclick="{ 
+ 
+ <script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+  
+<input  type="button" value="Google Speak in Spanish" onclick="{  
+   let myVoice = 'Spanish Female'
+   responsiveVoice.speak(document.getElementById('google_translate_element').innerText, myVoice, {pitch: 1, rate: 1, volume : 1})                                              
+}"><br><br>
+ 
+ 
+ 
+ <input type=button value="Mr. Ellis in English AutoScroll" onclick="{ 
    document.getElementById('myCountMax').value = '18,23,25,18,16,18,32,14,33,16,25,43,30,51,10';  
    mySetup();                                             
    myAudio01 = new Audio('recorded-english.m4a');
@@ -109,11 +123,6 @@ Number of Slides: <input type="text" id="myCountLinks" size="6" value="15" >, Se
  </div>
 
 
-  
-<input  type="button" value="Google Speak in Spanish" onclick="{  
-   let myVoice = 'Spanish Female'
-   responsiveVoice.speak(document.getElementById('google_translate_element').innerText, myVoice, {pitch: 1, rate: 1, volume : 1})                                              
-}"><br><br>
 
 
 <!--  This div is important for Google Speak  -->
@@ -331,11 +340,7 @@ A few Javascript abilites do not work, such as hiding the code. So all the Javas
  <hr>
  
 
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-}
-</script>
+
 
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
