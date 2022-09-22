@@ -45,13 +45,13 @@ function googleTranslateElementInit() {
 <input  type="button" value="Load3" onclick="{  
  let myVoiceObject = responsiveVoice.getVoices()
  let myTemp = ''
- for (let myLoop=0; myLoop < myVoiceObject.length; myLoop++ ){
+ for (let myLoop=0; myLoop < 50; myLoop++ ){
     myTemp += myLoop + ': ' myVoiceObject[myLoop].name + ', '
  }
  document.getElementById('myDiv01').innerHTML =  myTemp
 }"><br>
 
-<input id="myVoiceNum" type=number value=3>
+
 
 
 
@@ -60,7 +60,9 @@ function googleTranslateElementInit() {
     responsiveVoice.speak(document.getElementById('myMain').innerText, 'Spanish Female', {pitch: 1, rate: 1, volume : 1});   
 }"> 
 
-<input  type="button" value="Speak Page1" onclick="{  
+<input id="myVoiceNum" type=number value=3>
+
+<input  type="button" value="Speak Page by Number" onclick="{  
     let myV = responsiveVoice.getVoices()[document.getElementById('myVoiceNum').value].name
     document.getElementById('myDiv01').innerHTML =  myV
     responsiveVoice.speak(document.getElementById('myMain').innerText, myV, {pitch: 1, rate: 1, volume : 1});   
