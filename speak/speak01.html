@@ -30,13 +30,14 @@ function googleTranslateElementInit() {
 <div id="myDiv01">...</div>
 
 <script>
+ document.myVoiceVar = 7 
  let myVoiceObject = responsiveVoice.getVoices()
  let myTemp = ''
- for (let myLoop=0; myLoop < myVoiceObject.length(); myLoop++ ){
-    console.log(myVoiceObject[myLoop].name)
- }
-document.getElementById('myDiv01').innerHTML = JSON.stringify(myVoiceObject, null,null,'<br>')
-let myVoiceVar = 7 
+// for (let myLoop=0; myLoop < myVoiceObject.length(); myLoop++ ){
+//    console.log(myVoiceObject[myLoop].name)
+ //}
+document.getElementById('myDiv01').innerHTML = JSON.stringify(myVoiceObject, null, null,'<br>')
+
 </script>
 
 <input  type="button" value="Speak Page1" onclick="{  
@@ -44,7 +45,7 @@ let myVoiceVar = 7
 }"> 
 
 <input  type="button" value="Speak Page1" onclick="{                                                
-    responsiveVoice.speak(document.getElementById('myMain').innerText, responsiveVoice.getVoices()[myVoiceVar].name, {pitch: 1, rate: 1, volume : 1});   
+    responsiveVoice.speak(document.getElementById('myMain').innerText, responsiveVoice.getVoices()[document.myVoiceVar].name, {pitch: 1, rate: 1, volume : 1});   
 }"> 
 
 
