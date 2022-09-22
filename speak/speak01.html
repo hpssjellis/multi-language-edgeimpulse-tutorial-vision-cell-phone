@@ -21,6 +21,7 @@ Number of Slides: <input type="text" id="myCountLinks" size="6" value="15" >, Se
 <div id="google_translate_element"></div>
 
 <script type="text/javascript">
+document.myVoiceVar = 7 
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
 }
@@ -29,16 +30,14 @@ function googleTranslateElementInit() {
 
 <div id="myDiv01">...</div>
 
-<script>
- document.myVoiceVar = 7 
+<input  type="button" value="Load" onclick="{  
  let myVoiceObject = responsiveVoice.getVoices()
 // let myTemp = ''
 // for (let myLoop=0; myLoop < myVoiceObject.length(); myLoop++ ){
 //    console.log(myVoiceObject[myLoop].name)
  //}
-document.getElementById('myDiv01').innerHTML = myVoiceObject // JSON.stringify(myVoiceObject, null, null,'<br>')
-
-</script>
+document.getElementById('myDiv01').innerHTML =  JSON.stringify(myVoiceObject, null, null,'<br>')
+"}>
 
 <input  type="button" value="Speak Page1" onclick="{  
     responsiveVoice.speak(document.getElementById('myMain').innerText, 'Spanish Female', {pitch: 1, rate: 1, volume : 1});   
