@@ -39,6 +39,12 @@ function googleTranslateElementInit() {
      alert(voicelist)
 }">
  
+<input  type="button" value="Speak only" onclick="{  
+responsiveVoice.speak(document.getElementById('google_translate_element').textContent); 
+}"> 
+
+ 
+ 
  
  
  <input type=button value="Mr. Ellis in English AutoScroll" onclick="{ 
