@@ -44,7 +44,7 @@ function googleTranslateElementInit() {
  let myVoiceObject = responsiveVoice.getVoices()
  let myTemp = ''
  for (let myLoop=0; myLoop < 50; myLoop++ ){
-    myTemp += myLoop + ': '
+    myTemp += myLoop + ': 'myVoiceObject[myLoop] + ', '
  }
  document.getElementById('myDiv01').innerHTML =  myTemp
 }">
