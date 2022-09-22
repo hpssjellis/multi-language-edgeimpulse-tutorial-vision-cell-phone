@@ -109,11 +109,15 @@ Number of Slides: <input type="text" id="myCountLinks" size="6" value="15" >, Se
  </div>
 
 
-<~--  This div is important for Google Speak  -->
-<div id="google_translate_element">Hey this is cool</div>
+  
+<input  type="button" value="Google Speak in Spanish" onclick="{  
+   let myVoice = 'Spanish Female'
+   responsiveVoice.speak(document.getElementById('google_translate_element').innerText, myVoice, {pitch: 1, rate: 1, volume : 1})                                              
+}"><br><br>
 
 
-
+<!--  This div is important for Google Speak  -->
+<div id="google_translate_element">
 
 
 #### 1
@@ -291,6 +295,11 @@ On your HTTPS webserver (I use gitpages) the "browser" folder you uploaded with 
 <hr> 
 #### 15
 # End of presentation
+ 
+ 
+<!--  IMPORTANT THIS DIV IS THE END OF GOOGLE TRANSLATE AND SPEAK  -->
+ </div>
+ 
 
 <a href="#top">Top of page</a>
 
