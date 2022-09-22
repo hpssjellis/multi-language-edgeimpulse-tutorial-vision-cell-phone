@@ -43,16 +43,22 @@ document.getElementById('myDiv01').innerHTML =  JSON.stringify(myVoiceObject, nu
  let myVoiceObject = responsiveVoice.getVoices()
  let myTemp = ''
  for (let myLoop=0; myLoop < myVoiceObject.length(); myLoop++ ){
-    myTemp += myLoop + ': ' myVoiceObject[myLoop].name + '<br>'
+    myTemp += myLoop + ': ' myVoiceObject[myLoop].name + ', '
  }
  document.getElementById('myDiv01').innerHTML =  myTemp
 }">
+
+<input id="myVoiceNum" type=number value=3>
+
+
+
+
 <input  type="button" value="Speak Page1" onclick="{  
     responsiveVoice.speak(document.getElementById('myMain').innerText, 'Spanish Female', {pitch: 1, rate: 1, volume : 1});   
 }"> 
 
 <input  type="button" value="Speak Page1" onclick="{                                                
-    responsiveVoice.speak(document.getElementById('myMain').innerText, responsiveVoice.getVoices()[document.myVoiceVar].name, {pitch: 1, rate: 1, volume : 1});   
+    responsiveVoice.speak(document.getElementById('myMain').innerText, responsiveVoice.getVoices()[document.getElementById('myVoiceNum').value].name, {pitch: 1, rate: 1, volume : 1});   
 }"> 
 
 
