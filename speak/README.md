@@ -24,7 +24,7 @@ Number of Slides: <input type="text" id="myCountLinks" size="6" value="15" >, Se
  
  <script type="text/javascript">
 function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'document.body.innerText');
 }
 </script>
 
@@ -36,7 +36,7 @@ function googleTranslateElementInit() {
 
 <input  type="button" value="Get voices" onclick="{  
      var voicelist = responsiveVoice.getVoices();
-     alert(voicelist[0])
+     console.log(voicelist[0])
 }">
  
 <input  type="button" value="Speak only" onclick="{  
