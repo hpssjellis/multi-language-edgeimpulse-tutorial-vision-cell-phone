@@ -1,8 +1,8 @@
 
-### Vanilla Javascript Lightning Talk Pech Kucha Markdown HTML README.md
+<h1> Vanilla Javascript Lightning Talk Pech Kucha Markdown HTML README.md</h1>
 
 
-##### version 2.0.3-137
+<h6> version 2.0.3-137</h6>
 
 
 Demo of this Github Markdown can be viewed at this GitPages site (replace this link with your Gitpages link) [https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/](https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/)
@@ -159,8 +159,8 @@ function googleTranslateElementInit() {
 
 < div id="myMain">
 
-#### 1
-# Make a Vision Classification (unknown and pen) EdgeImpulse Machine Learning model using your cell phone before using the Arduino ML Kit.
+<h3> 1</h3>
+<h2>Make a Vision Classification (unknown and pen) EdgeImpulse Machine Learning model using your cell phone before using the Arduino ML Kit.
 
 First login or signup to <a href="https://edgeimpulse.com/">edgeImpulse.com</a> and then create a new Project
 
@@ -171,8 +171,8 @@ First login or signup to <a href="https://edgeimpulse.com/">edgeImpulse.com</a> 
 
 
 </div>
-#### 2
-# Dashboard
+<h3> 2 </h3>
+<h2>Dashboard
 
 Check the dashboard far right to see if you have vision set to a single label per item and the latency calculations to the Arduino ML Kit, or whatever microcontroller board you will be working with. Note: Some screens must be increased to see the left menu that shows the main EdgeImpulse steps.
 
@@ -183,8 +183,8 @@ Check the dashboard far right to see if you have vision set to a single label pe
 <br><br><br>
 <hr>
 
-#### 3
-# Connect Device  
+<h3> 3 </h3>
+<h2>Connect Device  
 Select Devices. For this demonstration we will connect a cell phone to EdgeImpulse instead of your Arduino ML kit. Click "Connect a Device". Then click Generate QR Code"
 
 <img src="https://user-images.githubusercontent.com/5605614/190931865-eabede2e-8e10-4117-bf73-c1fe8f2c0d21.png" title="Connect a device" width=600 /> <img src="https://user-images.githubusercontent.com/5605614/190931905-0f4e8889-e4db-450e-8503-d01cd5c0258f.png" title="Generate QR Code" width=300 />
@@ -198,8 +198,8 @@ Click "Allow Permissions"
 <br><br><br><br><br>
 <hr>
 
-#### 4
-# Edge Impulse Web App Data Collection: Label Unknown
+<h3> 4 </h3>
+<h2>Edge Impulse Web App Data Collection: Label Unknown
 
 Make sure the label says "unknown" before taking about 50 images of things that do not look like "pens". Note: There is a small advantage to make your labels numerical by putting a number directly before the label. For example:  "0unknown"
  
@@ -208,8 +208,8 @@ Make sure the label says "unknown" before taking about 50 images of things that 
 <br><br><br><br><br>
 <hr>
 
-#### 5
-# Edge Impulse Web App Data Collection: Label Pen
+<h3> 5 </h3>
+<h2>Edge Impulse Web App Data Collection: Label Pen
 
 Make sure the label says "pen" before taking about 30 images of pens or pencils. Note: There is a small advantage to make you labels numerical by putting a number directly before the label for example: "1pen", if you have more labels "2stapler" etc. For later coding this allows checking the first digit to see what the whole label is. 
 
@@ -218,8 +218,8 @@ Make sure the label says "pen" before taking about 30 images of pens or pencils.
 <br><br><br><br><br>
 <hr>
 
-#### 6
-# Data Acquisition and Labels
+<h3> 6 </h3>
+<h2>Data Acquisition and Labels
 
 Select Data Acquisition.  
 Many students mess up and forget to label the items. You can manually edit the label names,  also filter by names and select multiple filters. (But be careful here that you don't really mess up things up!)
@@ -229,8 +229,8 @@ Many students mess up and forget to label the items. You can manually edit the l
 <br><br><br>
 <hr>
 
-#### 7
-# Design your Impulse (Machine Learning Model)
+<h3> 7 </h3>
+<h2>Design your Impulse (Machine Learning Model)
 Select Design Impulse 
 This page looks complex but we are just going to use the defaults. 96 x 96 image (the maximum image would be 320 x 320 but wont work on many devices). Note the image  is always square.
  
@@ -241,8 +241,8 @@ This page looks complex but we are just going to use the defaults. 96 x 96 image
 <br><br>
 <hr>
 
-#### 8
-# Image Features
+<h3> 8 </h3>
+<h2>Image Features
 Select Image and then click "Save Parameters" and then click "Generate Features". It takes a few minutes to show the graph "Feature Explorer" See if your data looks like it will be easily seperated.
 
 
@@ -251,8 +251,8 @@ Select Image and then click "Save Parameters" and then click "Generate Features"
 
 <hr>
 
-#### 9
-# Transfer Learning
+<h3> 9 </h3>
+<h2>Transfer Learning
 Select Transfer learning and then change the Training Cycles from 20 to 200, Select Auto balance Dataset and Data Augmentation and click "Start Training" This step might take several minutes. Check the "loss" if you can read it. Hopefully is is gracefully reducing. The smaller the loss is, the relatively better your dataset is learning. When finished, your model will show the accuracy, Confusion Matrix which is faily easy to understand and the Data Explorer which gives a visual graph of how well your data has been sperated into distinct sets.
  
 <img src="https://user-images.githubusercontent.com/5605614/190945162-03662614-cdeb-43ec-92fa-0fe9201ec8ce.png" title="Transfer Learning" width=600 />
@@ -260,8 +260,8 @@ Select Transfer learning and then change the Training Cycles from 20 to 200, Sel
 
 <hr>
 
-#### 10
-# Check your data, on EdgeImpulse with the testing dataset.
+<h3> 10 </h3>
+<h2>Check your data, on EdgeImpulse with the testing dataset.
 Choose Live Classification  
 Choose a test sample, preferably one that has the pen in it first. 
 
@@ -272,8 +272,8 @@ Note: For the later WASM example the RAW FEATURES will be useful to copy for lat
 
 <hr>
 
-#### 11
-# Check you data using your cell phone loaded with the EdgeImpulse Web App
+<h3> 11 </h3>
+<h2>Check you data using your cell phone loaded with the EdgeImpulse Web App
 
 Back to your cell phone which you might have to re-connect to edgeImpulse. Click the button "Switch to Classification". Scan many objects and see the percent in decimal format 0.73 = 73%. Notice how fast the model analyses objects. 
 
@@ -285,8 +285,8 @@ Back to your cell phone which you might have to re-connect to edgeImpulse. Click
 <br><br><br><br><br>
 <hr>
 
-#### 12
-# Check you data using EdgeImpulse WASM (Web Assembly Language)
+<h3> 12 </h3>
+<h2>Check you data using EdgeImpulse WASM (Web Assembly Language)
 
 For this optional, but well worth it, step you would need an HTTPS web server like github that has be converted to show gitpages. Very easy in github: select "settings" then pages then change "none" to "master" and save, then wait 30 seconds and refresh to see your website URL.
 
@@ -300,8 +300,8 @@ On EdgeImpulse select "Deployment" choose "WASM and click "Build". Then look in 
  <br><br><br><br><br>
 <hr>
 
-#### 13
-# Check you data using EdgeImpulse WASM (web Assembly Language)
+<h3> 13 </h3>
+<h2>Check you data using EdgeImpulse WASM (web Assembly Language)
 
 Reminder: you would need an HTTPS web server such as github setup to use Gitpages.
 
@@ -315,8 +315,8 @@ Paste your RAW FEATURES that you copied from the "Live Classification" into the 
 
 <hr>
 
-#### 14
-# Check you data using Rocksetta index.html and EdgeImpulse WASM
+<h3> 14 </h3>
+<h2>Check you data using Rocksetta index.html and EdgeImpulse WASM
 
 On your HTTPS webserver (I use gitpages) the "browser" folder you uploaded with the edgeImpulse WASM code, replace the index.html file with my (Twitter @Rocksetta) Javascript HTML WebCam Demo page That can be dowloaded at  [downloads/index.html](downloads/index.html)
  
@@ -334,8 +334,8 @@ On your HTTPS webserver (I use gitpages) the "browser" folder you uploaded with 
  
 
 <hr> 
-#### 15
-# End of presentation
+<h3> 15 </h3>
+<h2>End of presentation
  
 
  
@@ -348,11 +348,11 @@ On your HTTPS webserver (I use gitpages) the "browser" folder you uploaded with 
 
 
 
- ### By Jeremy Ellis Twitter <a href="https://twitter.com/rocksetta">@Rocksetta </a> Use at your own Risk!
+ ##<h2>By Jeremy Ellis Twitter <a href="https://twitter.com/rocksetta">@Rocksetta </a> Use at your own Risk!
 
 
-### By Jeremy Ellis Twitter @Rocksetta Use at your own Risk!
-### Note when looking at the markdown none of the javascript buttons appear, you must go to your Gitpages Demo Link!
+##<h2>By Jeremy Ellis Twitter @Rocksetta Use at your own Risk!
+##<h2>Note when looking at the markdown none of the javascript buttons appear, you must go to your Gitpages Demo Link!
 A few Javascript abilites do not work, such as hiding the code. So all the Javascript not in buttons is below. 
 
 Note: 
@@ -362,7 +362,7 @@ Note:
 4. Pecha Kucha template [here](https://github.com/hpssjellis/pecha-kucha-lightning-talks-template)
 <br><br>
  
- ### Note when looking at the markdown none of the javascript buttons appear, you must go to your Gitpages Demo Link!
+ ##<h2>Note when looking at the markdown none of the javascript buttons appear, you must go to your Gitpages Demo Link!
 A few Javascript abilites do not work, such as hiding the code. So all the Javascript not in buttons is below. 
 
  
