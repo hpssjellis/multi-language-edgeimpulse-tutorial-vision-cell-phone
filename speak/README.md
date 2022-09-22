@@ -2,7 +2,7 @@
 ### Vanilla Javascript Lightning Talk Pech Kucha Markdown HTML README.md
 
 
-##### version 2.0.3-129
+##### version 2.0.3-130
 
 
 Demo of this Github Markdown can be viewed at this GitPages site (replace this link with your Gitpages link) [https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/](https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/)
@@ -27,8 +27,7 @@ function googleTranslateElementInit() {
 </script>
 
 
-<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
-  
+
    
   <input  type="button" value="Speak only 2" onclick="{  
     responsiveVoice.speak(document.body.innerText); 
@@ -374,7 +373,8 @@ A few Javascript abilites do not work, such as hiding the code. So all the Javas
 
   
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+  
  
 
 
