@@ -2,7 +2,7 @@
 <h1> Vanilla Javascript Lightning Talk Pech Kucha Markdown HTML README.md</h1>
 
 
-<h6> version 2.0.3-138</h6>
+<h6> version 2.1.0-139</h6>
 
 
 Demo of this Github Markdown can be viewed at this GitPages site (replace this link with your Gitpages link) <a href="https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/#top">https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/</a><br><br>
@@ -27,12 +27,20 @@ function googleTranslateElementInit() {
 </script>
 
 
+<div id="myDiv01">...</div>
 
+<script>
+document.getElementById('myDiv01').innerHTML = '<b>wow</b>'
+let myVoiceVar = 7 
+</script>
 
 <input  type="button" value="Speak Page1" onclick="{  
     responsiveVoice.speak(document.getElementById('myMain').innerText, 'Spanish Female', {pitch: 1, rate: 1, volume : 1});   
 }"> 
 
+<input  type="button" value="Speak Page1" onclick="{                                                
+    responsiveVoice.speak(document.getElementById('myMain').innerText, responsiveVoice.getVoices()[myVoiceVar].name, {pitch: 1, rate: 1, volume : 1});   
+}"> 
 
 
 <input  type="button" value="Speak Page5" onclick="{  
