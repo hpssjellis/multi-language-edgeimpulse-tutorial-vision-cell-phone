@@ -2,7 +2,7 @@
 ### Vanilla Javascript Lightning Talk Pech Kucha Markdown HTML README.md
 
 
-##### version 2.0.3-128
+##### version 2.0.3-129
 
 
 Demo of this Github Markdown can be viewed at this GitPages site (replace this link with your Gitpages link) [https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/](https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/)
@@ -29,6 +29,17 @@ function googleTranslateElementInit() {
 
 <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
   
+   
+  <input  type="button" value="Speak only 2" onclick="{  
+    responsiveVoice.speak(document.body.innerText); 
+}"> 
+ 
+  
+  <input  type="button" value="Speak only" onclick="{  
+    responsiveVoice.speak(document.body.innerText, {pitch: 1, rate: 1, volume : 1}); 
+}"> 
+
+
 <input  type="button" value="Google Speak in Spanish" onclick="{  
    let myVoice = 'Spanish Female'
    responsiveVoice.speak(document.body.innerText, myVoice, {pitch: 1, rate: 1, volume : 1});                                              
@@ -38,7 +49,8 @@ function googleTranslateElementInit() {
    responsiveVoice.speak();                                              
 }"><br><br>
 
-<input  type="button" value="Get voices" onclick="{  
+<input  type="button" value="Get voices" onclick="{ 
+     console.log("Cool it works)
      var voicelist = responsiveVoice.getVoices();
      console.log(voicelist)
      console.log(voicelist[0].name)
@@ -46,9 +58,6 @@ function googleTranslateElementInit() {
      console.log(voicelist[2].name)
 }">
  
-<input  type="button" value="Speak only" onclick="{  
-    responsiveVoice.speak(document.body.innerText, {pitch: 1, rate: 1, volume : 1}); 
-}"> 
 
  
  
