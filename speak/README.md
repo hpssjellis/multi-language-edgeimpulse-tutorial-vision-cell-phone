@@ -27,12 +27,17 @@ function googleTranslateElementInit() {
 }
 </script>
 
-
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
   
 <input  type="button" value="Google Speak in Spanish" onclick="{  
    let myVoice = 'Spanish Female'
    responsiveVoice.speak(document.getElementById('google_translate_element').innerText, myVoice, {pitch: 1, rate: 1, volume : 1})                                              
 }"><br><br>
+
+<input  type="button" value="Get voices" onclick="{  
+     var voicelist = responsiveVoice.getVoices();
+     alert(voicelist)
+}">
  
  
  
