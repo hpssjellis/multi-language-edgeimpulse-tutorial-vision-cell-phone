@@ -32,11 +32,11 @@ function googleTranslateElementInit() {
 <script>
  document.myVoiceVar = 7 
  let myVoiceObject = responsiveVoice.getVoices()
- let myTemp = ''
+// let myTemp = ''
 // for (let myLoop=0; myLoop < myVoiceObject.length(); myLoop++ ){
 //    console.log(myVoiceObject[myLoop].name)
  //}
-document.getElementById('myDiv01').innerHTML = JSON.stringify(myVoiceObject, null, null,'<br>')
+document.getElementById('myDiv01').innerHTML = myVoiceObject // JSON.stringify(myVoiceObject, null, null,'<br>')
 
 </script>
 
