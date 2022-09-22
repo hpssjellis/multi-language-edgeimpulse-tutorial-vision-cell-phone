@@ -28,23 +28,11 @@ function googleTranslateElementInit() {
 
 
 
-   
-<input  type="button" value="Speak Page0" onclick="{  
-    responsiveVoice.speak(document.getElementById('myMain').innerText); 
-}"> 
 
-   
 <input  type="button" value="Speak Page1" onclick="{  
-    responsiveVoice.speak(document.body.innerText); 
+    responsiveVoice.speak(document.getElementById('myMain').innerText, 'Spanish Female', {pitch: 1, rate: 1, volume : 1});   
 }"> 
 
-<input  type="button" value="Speak spanish female" onclick="{  
-   responsiveVoice.speak(document.body.innerText, 'Spanish Female', {pitch: 1, rate: 1, volume : 1});   
-}"> 
-
-<input  type="button" value="Speak Page3" onclick="{  
-    responsiveVoice.speak(document.body.innerText, 'Spanish Female'); 
-}"> 
 
 
 <input  type="button" value="Speak Page5" onclick="{  
@@ -54,13 +42,7 @@ function googleTranslateElementInit() {
 }"> 
 
 
-<input  type="button" value="Speak Page5" onclick="{  
-    console.log(google.translate.pageLanguage();  
-}"> 
 
-<input  type="button" value="Speak Page6" onclick="{  
-    console.log(google.translate.TranslateElement.pageLanguage();  
-}"> 
 <br><br>
 
 
