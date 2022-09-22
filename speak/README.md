@@ -39,7 +39,7 @@ function googleTranslateElementInit() {
 }"> 
 
   <input  type="button" value="Speak spanish female" onclick="{  
-   responsiveVoice.speak(document.body.innerText, 'Spanish Female', {pitch: 2, rate: 2, volume : 1});   
+   responsiveVoice.speak(document.body.innerText, 'Spanish Female', {pitch: 1, rate: 1, volume : 1});   
 }"> 
 
   <input  type="button" value="Speak Page3" onclick="{  
@@ -48,8 +48,7 @@ function googleTranslateElementInit() {
 
 
   <input  type="button" value="Speak Page5" onclick="{  
-    var voicelist = responsiveVoice.getVoices();
-    console.log(voicelist[0])
+    console.log(responsiveVoice.getVoices()[0])
 
 }"> 
 
