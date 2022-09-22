@@ -171,7 +171,7 @@ First login or signup to <a href="https://edgeimpulse.com/">edgeImpulse.com</a> 
 <hr>
 
 
-</div>
+
 #### 2
 # Dashboard
 
@@ -337,7 +337,7 @@ On your HTTPS webserver (I use gitpages) the "browser" folder you uploaded with 
 <hr> 
 #### 15
 # End of presentation
- 
+</div> 
 
  
 
