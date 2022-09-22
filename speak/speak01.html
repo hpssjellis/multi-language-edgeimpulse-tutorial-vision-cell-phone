@@ -32,17 +32,20 @@ function googleTranslateElementInit() {
 
 <input  type="button" value="Load" onclick="{  
  let myVoiceObject = responsiveVoice.getVoices()
-// let myTemp = ''
-// for (let myLoop=0; myLoop < myVoiceObject.length(); myLoop++ ){
-//    console.log(myVoiceObject[myLoop].name)
- //}
-document.getElementById('myDiv01').innerHTML =  JSON.stringify(myVoiceObject, null,'<br>')
+ document.getElementById('myDiv01').innerHTML =  JSON.stringify(myVoiceObject, null,'<br>')
 }">
 
 <input  type="button" value="Load2" onclick="{  
  let myVoiceObject = responsiveVoice.getVoices()
+ document.getElementById('myDiv01').innerHTML =  JSON.stringify(myVoiceObject, null,', ')
+}">
+
+
+
+<input  type="button" value="Load3" onclick="{  
+ let myVoiceObject = responsiveVoice.getVoices()
  let myTemp = ''
- for (let myLoop=0; myLoop < myVoiceObject.length(); myLoop++ ){
+ for (let myLoop=0; myLoop < myVoiceObject.length; myLoop++ ){
     myTemp += myLoop + ': ' myVoiceObject[myLoop].name + ', '
  }
  document.getElementById('myDiv01').innerHTML =  myTemp
