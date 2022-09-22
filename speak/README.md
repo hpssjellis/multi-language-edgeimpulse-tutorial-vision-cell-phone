@@ -29,16 +29,17 @@ function googleTranslateElementInit() {
   
 <input  type="button" value="Google Speak in Spanish" onclick="{  
    let myVoice = 'Spanish Female'
-   responsiveVoice.speak(document.getElementById('google_translate_element').innerText, myVoice, {pitch: 1, rate: 1, volume : 1})                                              
+   responsiveVoice.speak(document.getElementById(document.body).innerText, myVoice, {pitch: 1, rate: 1, volume : 1})                                              
 }"><br><br>
 
 <input  type="button" value="Get voices" onclick="{  
      var voicelist = responsiveVoice.getVoices();
-     console.log(voicelist)
+     alert(voicelist[0])
+     console.log(voicelist[0])
 }">
  
 <input  type="button" value="Speak only" onclick="{  
-responsiveVoice.speak(document.getElementById('google_translate_element').textContent); 
+responsiveVoice.speak(document.body.innerText); 
 }"> 
 
  
@@ -139,12 +140,7 @@ responsiveVoice.speak(document.getElementById('google_translate_element').textCo
 
 
 
-<!--  This div is important for Google Speak  -->
-<div id="google_translate_element"> Cool this works
 
- 
-<!--  IMPORTANT THIS DIV IS THE END OF GOOGLE TRANSLATE AND SPEAK  -->
- </div>
 
 
 #### 1
