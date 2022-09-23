@@ -2,23 +2,20 @@
 <h1>Multi-Language EdgeImpulse Tutorial by Rocksetta</h1>
 
 
-<h6> version 2.1.1-154</h6>
+<h6> version 2.2.0-155</h6>
 
 
-Demo of this Github Markdown can be viewed at this GitPages site (replace this link with your Gitpages link) <a href="https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/#top">https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/</a><br><br>
+This demo at <a href="https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/#top">https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/</a><br><br>
 
 
-This Github Repository (replace this link with your Repository Link) <a href="https://github.com/hpssjellis/multi-language-edgeimpulse-tutorial-vision-cell-phone">https://github.com/hpssjellis/multi-language-edgeimpulse-tutorial-vision-cell-phone</a><br><br>
+The Github Repository is at <a href="https://github.com/hpssjellis/multi-language-edgeimpulse-tutorial-vision-cell-phone">https://github.com/hpssjellis/multi-language-edgeimpulse-tutorial-vision-cell-phone</a><br><br>
 
 
-Number of Slides: <input type="text" id="myCountLinks" size="6" value="15" >, Seconds for each Slide: <input type="text" id="myCountMax" size="30" value="20,20" >   Can be a list of seconds example: 17, 20, 24, 20 The last number continues.
+Number of Slides: <input type="text" id="myCountLinks" size="6" value="15" >. List of seconds per slide: <input type="text" id="myCountMax" size="30" value="20,20" >   Can be a list of seconds example: 17, 20, 24, 20 The last number continues.
  <br><br>
  
- To convert to any language click <a href="https://translate.google.com/?sl=en&tl=es&op=websites">here</a><br>
- For example This page in: <a href="https://hpssjellis-github-io.translate.goog/multi-language-edgeimpulse-tutorial-vision-cell-phone/?_x_tr_sl=en&_x_tr_tl=fr&_x_tr_hl=en&_x_tr_pto=wapp">French</a>, <a href="https://hpssjellis-github-io.translate.goog/multi-language-edgeimpulse-tutorial-vision-cell-phone/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=en&_x_tr_pto=wapp">Spanish</a>, Original in <a href="https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/">English</a>
- 
- 
-<div id="google_translate_element"></div>
+
+Choose the language: <div id="google_translate_element"></div>
 
 <script type="text/javascript">
 document.myVoiceVar = 7 
@@ -27,18 +24,14 @@ function googleTranslateElementInit() {
 }
 </script>
 
-<Select id="mySelect01" onchange="{
+Then choose the Speaker: <Select id="mySelect01" onchange="{
   document.getElementById('myVoiceNum').value =  this.value
   document.getElementById('myNumberSpeak').click()
-}"></select><br>
+}"></select><br><br>
 
 <div id="myDiv01">...</div><br>
-
-
-
-Voice number: <input id="myVoiceNum" type=number  style="width: 7em" value=3>
-
-<input id="myNumberSpeak" type="button" value="Speak Page by Number" onclick="{  
+Voice number: <input id="myVoiceNum" type=number  style="width: 5em" value=3> 
+<input id="myNumberSpeak" type="button" value="Speak!" onclick="{  
     let myV = responsiveVoice.getVoices()[document.getElementById('myVoiceNum').value].name
     document.getElementById('myDiv01').innerHTML =  myV
     responsiveVoice.speak(document.getElementById('myMain').innerText, myV, {pitch: 1, rate: 1, volume : 1});   
@@ -55,9 +48,9 @@ Voice number: <input id="myVoiceNum" type=number  style="width: 7em" value=3>
 
  
  
+<h2>This section readers have programmed autoscroll </h2> 
  
- 
- <input type=button value="Mr. Ellis Reading English with AutoScroll" onclick="{ 
+ <input type=button value="Mr. Ellis Reading in English" onclick="{ 
    document.getElementById('myCountMax').value = '18,23,25,18,16,18,32,14,33,16,25,43,30,51,10';  
    mySetup();                                             
    myAudio01 = new Audio('recorded-english.m4a');
@@ -66,8 +59,11 @@ Voice number: <input id="myVoiceNum" type=number  style="width: 7em" value=3>
 }">
 
 
+<h2>This section is for static webpage conversions not supported by Google</h2> 
 
+No pages yet!
 
+<hr>
  
 <div id="myNumSlides" style=" position:sticky; top:0px; left:20px; height:25px; "> ...</div>  <br>
 
