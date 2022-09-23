@@ -2,7 +2,7 @@
 <h1>Multi-Language EdgeImpulse Tutorial by Rocksetta</h1>
 
 
-<h6> version 2.1.1-153</h6>
+<h6> version 2.1.1-154</h6>
 
 
 Demo of this Github Markdown can be viewed at this GitPages site (replace this link with your Gitpages link) <a href="https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/#top">https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/</a><br><br>
@@ -33,24 +33,7 @@ function googleTranslateElementInit() {
 }"></select>
 
 <div id="myDiv01">...</div><br>
-<!--
-<input  type="button" value="Load7" onclick="{  
- let myVoiceObject = responsiveVoice.getVoices()
- let myTemp = ''
- for (let myLoop=0; myLoop < 50; myLoop++ ){
-    myTemp += '<option value=\''+myLoop + '\'>' + myLoop + ' : ' + myVoiceObject[myLoop].name + '</option>'
- }
- document.getElementById('mySelect01').innerHTML =  myTemp
-}"><br>
 
-
-
-
-
-<input  type="button" value="Speak Page1" onclick="{  
-    responsiveVoice.speak(document.getElementById('myMain').innerText, 'Spanish Female', {pitch: 1, rate: 1, volume : 1});   
-}"> 
--->
 
 
 Voice number: <input id="myVoiceNum" type=number  style="width: 7em" value=3>
@@ -404,10 +387,14 @@ A few Javascript abilites do not work, such as hiding the code. So all the Javas
  let myAudio01 = new Audio();
  document.body.style.backgroundColor = "yellow";
  
+ 
+ let myArray = [1,2,3,13,14,16,18,22]
  let myVoiceObject = responsiveVoice.getVoices()
  let myTemp = ''
  for (let myLoop=0; myLoop < 50; myLoop++ ){
-    myTemp += '<option value=\''+myLoop + '\'>' + myLoop + ' : ' + myVoiceObject[myLoop].name + '</option>'
+    if ( myArray.includes(myLoop) ) {
+       myTemp += '<option value=\''+myLoop + '\'>' + myLoop + ' : ' + myVoiceObject[myLoop].name + '</option>'
+    }
  }
  document.getElementById('mySelect01').innerHTML =  myTemp
  
