@@ -2,7 +2,7 @@
 <h1> Vanilla Javascript Lightning Talk Pech Kucha Markdown HTML README.md</h1>
 
 
-<h6> version 2.1.1-149</h6>
+<h6> version 2.1.1-150</h6>
 
 
 Demo of this Github Markdown can be viewed at this GitPages site (replace this link with your Gitpages link) <a href="https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/#top">https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/</a><br><br>
@@ -28,31 +28,10 @@ function googleTranslateElementInit() {
 </script>
 
 
-<div id="myDiv01">...</div>
-<Select id="mySelect01" onchange="{document.getElementById('myVoiceNum').value =  this.value}"></select>
-
-
-
-<input  type="button" value="Load5" onclick="{  
- let myVoiceObject = responsiveVoice.getVoices()
- let myTemp = ''
- for (let myLoop=0; myLoop < 50; myLoop++ ){
-    myTemp += myLoop + ': ' + myVoiceObject[myLoop] + ', '
- }
- document.getElementById('myDiv01').innerHTML =  myTemp
-}">
-
-
-
-
-<input  type="button" value="Load6" onclick="{  
- let myVoiceObject = responsiveVoice.getVoices()
- let myTemp = ''
- for (let myLoop=0; myLoop < 50; myLoop++ ){
-    myTemp += myLoop + ': ' + myVoiceObject[myLoop].name + '<br> '
- }
- document.getElementById('myDiv01').innerHTML =  myTemp
-}"><br>
+<Select id="mySelect01" onchange="{
+  document.getElementById('myVoiceNum').value =  this.value
+  document.getElementById('myNumberSpeak').click()
+}"></select>
 
 
 <input  type="button" value="Load7" onclick="{  
@@ -65,11 +44,6 @@ function googleTranslateElementInit() {
 }"><br>
 
 
-<input  type="button" value="Load8" onclick="{  
-  document.getElementById('mySelect01').innerHTML =  '<option value=4>four</option>'
-}"><br>
-
-
 
 
 
@@ -79,7 +53,7 @@ function googleTranslateElementInit() {
 
 Voice number: <input id="myVoiceNum" size=5 type=number value=3>
 
-<input  type="button" value="Speak Page by Number" onclick="{  
+<input id="myNumberSpeak" type="button" value="Speak Page by Number" onclick="{  
     let myV = responsiveVoice.getVoices()[document.getElementById('myVoiceNum').value].name
     document.getElementById('myDiv01').innerHTML =  myV
     responsiveVoice.speak(document.getElementById('myMain').innerText, myV, {pitch: 1, rate: 1, volume : 1});   
@@ -428,7 +402,16 @@ A few Javascript abilites do not work, such as hiding the code. So all the Javas
  let xSlide = 3;
  let myAudio01 = new Audio();
  document.body.style.backgroundColor = "yellow";
-;
+ 
+ let myVoiceObject = responsiveVoice.getVoices()
+ let myTemp = ''
+ for (let myLoop=0; myLoop < 50; myLoop++ ){
+    myTemp += '<option value=\''+myLoop + '\'>' + myLoop + ' : ' + myVoiceObject[myLoop].name + '</option>'
+ }
+ document.getElementById('mySelect01').innerHTML =  myTemp
+ 
+ 
+
  
 function mySetup(){
    document.getElementById('myStick').style.display = 'none';                                                 
