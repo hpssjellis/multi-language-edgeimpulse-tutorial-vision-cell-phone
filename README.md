@@ -13,7 +13,7 @@ This Github Repository (replace this link with your Repository Link) [https://gi
 
 ## Submit sound file of you reading a specific language.
 
-JUst file an issue and send a link or the actual sound file.  IMPORTANT try to send the list of seconds for each page read  example 10,13,8,20,36 ...
+Just file an issue and send a link or the actual sound file.  IMPORTANT try to send the list of seconds for each page read  example 10,13,8,20,36 ...
 
 
 
