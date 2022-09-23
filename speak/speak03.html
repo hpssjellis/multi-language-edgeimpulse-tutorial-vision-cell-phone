@@ -2,7 +2,7 @@
 <h1> Vanilla Javascript Lightning Talk Pech Kucha Markdown HTML README.md</h1>
 
 
-<h6> version 2.1.1-150</h6>
+<h6> version 2.1.1-151</h6>
 
 
 Demo of this Github Markdown can be viewed at this GitPages site (replace this link with your Gitpages link) <a href="https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/#top">https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/</a><br><br>
@@ -33,7 +33,7 @@ function googleTranslateElementInit() {
   document.getElementById('myNumberSpeak').click()
 }"></select>
 
-
+<!--
 <input  type="button" value="Load7" onclick="{  
  let myVoiceObject = responsiveVoice.getVoices()
  let myTemp = ''
@@ -43,7 +43,7 @@ function googleTranslateElementInit() {
  document.getElementById('mySelect01').innerHTML =  myTemp
 }"><br>
 
-
+-->
 
 
 
@@ -51,7 +51,7 @@ function googleTranslateElementInit() {
     responsiveVoice.speak(document.getElementById('myMain').innerText, 'Spanish Female', {pitch: 1, rate: 1, volume : 1});   
 }"> 
 
-Voice number: <input id="myVoiceNum" size=5 type=number value=3>
+Voice number: <input id="myVoiceNum" size=5 type=text value=3>
 
 <input id="myNumberSpeak" type="button" value="Speak Page by Number" onclick="{  
     let myV = responsiveVoice.getVoices()[document.getElementById('myVoiceNum').value].name
