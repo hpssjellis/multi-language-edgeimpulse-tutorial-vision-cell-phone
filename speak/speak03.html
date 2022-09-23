@@ -2,7 +2,7 @@
 <h1> Vanilla Javascript Lightning Talk Pech Kucha Markdown HTML README.md</h1>
 
 
-<h6> version 2.1.1-151</h6>
+<h6> version 2.1.1-152</h6>
 
 
 Demo of this Github Markdown can be viewed at this GitPages site (replace this link with your Gitpages link) <a href="https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/#top">https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/</a><br><br>
@@ -27,12 +27,12 @@ function googleTranslateElementInit() {
 }
 </script>
 
-
 <Select id="mySelect01" onchange="{
   document.getElementById('myVoiceNum').value =  this.value
   document.getElementById('myNumberSpeak').click()
 }"></select>
 
+<div id="myDiv01">...</div><br>
 <!--
 <input  type="button" value="Load7" onclick="{  
  let myVoiceObject = responsiveVoice.getVoices()
@@ -43,15 +43,17 @@ function googleTranslateElementInit() {
  document.getElementById('mySelect01').innerHTML =  myTemp
 }"><br>
 
--->
+
 
 
 
 <input  type="button" value="Speak Page1" onclick="{  
     responsiveVoice.speak(document.getElementById('myMain').innerText, 'Spanish Female', {pitch: 1, rate: 1, volume : 1});   
 }"> 
+-->
 
-Voice number: <input id="myVoiceNum" size=5 type=text value=3>
+
+Voice number: <input id="myVoiceNum" type=number  style="width: 7em" value=3>
 
 <input id="myNumberSpeak" type="button" value="Speak Page by Number" onclick="{  
     let myV = responsiveVoice.getVoices()[document.getElementById('myVoiceNum').value].name
