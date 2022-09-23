@@ -22,14 +22,14 @@ document.myVoiceVar = 7
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
 }
-</script>
+</script><br>
 
 Then choose the Speaker: <Select id="mySelect01" onchange="{
   document.getElementById('myVoiceNum').value =  this.value
   document.getElementById('myNumberSpeak').click()
-}"></select><br><br>
+}"></select><br>
 
-<div id="myDiv01">...</div><br>
+<div id="myDiv01">...</div>
 Voice number: <input id="myVoiceNum" type=number  style="width: 5em" value=3> 
 <input id="myNumberSpeak" type="button" value="Speak!" onclick="{  
     let myV = responsiveVoice.getVoices()[document.getElementById('myVoiceNum').value].name
