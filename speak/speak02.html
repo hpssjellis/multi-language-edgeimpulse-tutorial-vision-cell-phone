@@ -2,7 +2,7 @@
 <h1> Vanilla Javascript Lightning Talk Pech Kucha Markdown HTML README.md</h1>
 
 
-<h6> version 2.1.0-144</h6>
+<h6> version 2.1.0-145</h6>
 
 
 Demo of this Github Markdown can be viewed at this GitPages site (replace this link with your Gitpages link) <a href="https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/#top">https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/</a><br><br>
@@ -29,16 +29,9 @@ function googleTranslateElementInit() {
 
 
 <div id="myDiv01">...</div>
+<Select id="mySelect01"></select>
 
-<input  type="button" value="Load" onclick="{  
- let myVoiceObject = responsiveVoice.getVoices()
- document.getElementById('myDiv01').innerHTML =  JSON.stringify(myVoiceObject, null,'<br>')
-}">
 
-<input  type="button" value="Load2" onclick="{  
- let myVoiceObject = responsiveVoice.getVoices()
- document.getElementById('myDiv01').innerHTML =  JSON.stringify(myVoiceObject, null,', ')
-}">
 
 <input  type="button" value="Load5" onclick="{  
  let myVoiceObject = responsiveVoice.getVoices()
@@ -56,11 +49,20 @@ function googleTranslateElementInit() {
  let myVoiceObject = responsiveVoice.getVoices()
  let myTemp = ''
  for (let myLoop=0; myLoop < 50; myLoop++ ){
-    myTemp += myLoop + ': ' + myVoiceObject[myLoop].name + ', '
+    myTemp += myLoop + ': ' + myVoiceObject[myLoop].name + '<br> '
  }
  document.getElementById('myDiv01').innerHTML =  myTemp
 }"><br>
 
+
+<input  type="button" value="Load6" onclick="{  
+ let myVoiceObject = responsiveVoice.getVoices()
+ let myTemp = ''
+ for (let myLoop=0; myLoop < 50; myLoop++ ){
+    myTemp += '<option value=/''+myLoop + '/'>' + myVoiceObject[myLoop].name + '</option>'
+ }
+ document.getElementById('mySelect01').innerHTML =  myTemp
+}"><br>
 
 
 
