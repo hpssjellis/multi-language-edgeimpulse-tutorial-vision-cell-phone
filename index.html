@@ -150,7 +150,7 @@ No pages yet!
 
 <div id="myMain">
 
-<h3><a href="#1">1</a> </h3>
+<h3><a name="1" href="#1">1</a> </h3>
 <h2>Make a Vision Classification (unknown and pen) EdgeImpulse Machine Learning model using your cell phone before using the Arduino ML Kit. </h2>
 
 First login or signup to <a href="https://edgeimpulse.com/">edgeImpulse.com</a> and then create a new Project<br>
@@ -162,7 +162,7 @@ First login or signup to <a href="https://edgeimpulse.com/">edgeImpulse.com</a> 
 
 
 
-<h3><a href="#2">2</a>  </h3>
+<h3><a  name="2" href="#2">2</a>  </h3>
 <h2>Dashboard </h2>
 
 Check the dashboard far right to see if you have vision set to a single label per item and the latency calculations to the Arduino ML Kit, or whatever microcontroller board you will be working with. Note: Some screens must be increased to see the left menu that shows the main EdgeImpulse steps.
@@ -174,7 +174,7 @@ Check the dashboard far right to see if you have vision set to a single label pe
 <br><br><br>
 <hr>
 
-<h3><a href="#3">3</a>  </h3>
+<h3><a  name="3" href="#3">3</a>  </h3>
 <h2>Connect Device   </h2>
 Select Devices. For this demonstration we will connect a cell phone to EdgeImpulse instead of your Arduino ML kit. Click "Connect a Device". Then click Generate QR Code"
 <br>
@@ -189,7 +189,7 @@ Click "Allow Permissions"
 <br><br><br><br><br>
 <hr>
 
-<h3><a href="#4">4</a>  </h3>
+<h3><a  name="4" href="#4">4</a>  </h3>
 <h2>Edge Impulse Web App Data Collection: Label Unknown </h2>
 
 Make sure the label says "unknown" before taking about 50 images of things that do not look like "pens". Note: There is a small advantage to make your labels numerical by putting a number directly before the label. For example:  "0unknown"
@@ -199,7 +199,7 @@ Make sure the label says "unknown" before taking about 50 images of things that 
 <br><br><br><br><br>
 <hr>
 
-<h3><a href="#5">5</a>  </h3>
+<h3><a  name="5" href="#5">5</a>  </h3>
 <h2>Edge Impulse Web App Data Collection: Label Pen </h2>
 <br>
 Make sure the label says "pen" before taking about 30 images of pens or pencils. Note: There is a small advantage to make you labels numerical by putting a number directly before the label for example: "1pen", if you have more labels "2stapler" etc. For later coding this allows checking the first digit to see what the whole label is. 
@@ -209,7 +209,7 @@ Make sure the label says "pen" before taking about 30 images of pens or pencils.
 <br><br><br><br><br>
 <hr>
 
-<h3><a href="#6">6</a>  </h3>
+<h3><a  name="6" href="#6">6</a>  </h3>
 <h2>Data Acquisition and Labels </h2>
 
 Select Data Acquisition. <br> 
@@ -220,7 +220,7 @@ Many students mess up and forget to label the items. You can manually edit the l
 <br><br><br>
 <hr>
 
-<h3><a href="#7">7</a>  </h3>
+<h3><a  name="7" href="#7">7</a>  </h3>
 <h2>Design your Impulse (Machine Learning Model) </h2>
 Select Design Impulse <br>
 This page looks complex but we are just going to use the defaults. 96 x 96 image (the maximum image would be 320 x 320 but wont work on many devices). Note the image  is always square.
@@ -232,7 +232,7 @@ This page looks complex but we are just going to use the defaults. 96 x 96 image
 <br><br>
 <hr>
 
-<h3><a href="#8">8</a>  </h3>
+<h3><a  name="8" href="#8">8</a>  </h3>
 <h2>Image Features </h2>
 Select Image and then click "Save Parameters" and then click "Generate Features". It takes a few minutes to show the graph "Feature Explorer" See if your data looks like it will be easily seperated.
 
@@ -242,7 +242,7 @@ Select Image and then click "Save Parameters" and then click "Generate Features"
 
 <hr>
 
-<h3><a href="#9">9</a>  </h3>
+<h3><a  name="9" href="#9">9</a>  </h3>
 <h2>Transfer Learning </h2>
 Select Transfer learning and then change the Training Cycles from 20 to 200, Select Auto balance Dataset and Data Augmentation and click "Start Training" This step might take several minutes. Check the "loss" if you can read it. Hopefully is is gracefully reducing. The smaller the loss is, the relatively better your dataset is learning. When finished, your model will show the accuracy, Confusion Matrix which is fairly easy to understand and the Data Explorer which gives a visual graph of how well your data has been seperated into distinct sets.
  <br>
@@ -251,7 +251,7 @@ Select Transfer learning and then change the Training Cycles from 20 to 200, Sel
 
 <hr>
 
-<h3><a href="#10">10</a>  </h3>
+<h3><a  name="10" href="#10">10</a>  </h3>
 <h2>Check your data, on EdgeImpulse with the testing dataset. </h2>
 Choose Live Classification <br> 
 Choose a test sample, preferably one that has the pen in it first. 
@@ -263,7 +263,7 @@ Note: For the later WASM example the RAW FEATURES will be useful to copy for lat
 
 <hr>
 
-<h3><a href="#11">11</a>  </h3>
+<h3><a  name="11" href="#11">11</a>  </h3>
 <h2>Check you data using your cell phone loaded with the EdgeImpulse Web App </h2>
 
 Back to your cell phone which you might have to re-connect to edgeImpulse. Click the button "Switch to Classification". Scan many objects and see the percent in decimal format 0.73 = 73%. Notice how fast the model analyses objects. 
@@ -276,7 +276,7 @@ Back to your cell phone which you might have to re-connect to edgeImpulse. Click
 <br><br><br><br><br>
 <hr>
 
-<h3><a href="#12">12</a>  </h3>
+<h3><a  name="12" href="#12">12</a>  </h3>
 <h2>Check you data using EdgeImpulse WASM (Web Assembly Language) </h2>
 
 For this optional, but well worth it, step you would need an HTTPS web server like github that has be converted to show gitpages. Very easy in github: select "settings" then pages then change "none" to "master" and save, then wait 30 seconds and refresh to see your website URL.
@@ -291,7 +291,7 @@ On EdgeImpulse select "Deployment" choose "WASM and click "Build". Then look in 
  <br><br><br><br><br>
 <hr>
 
-<h3><a href="#13">13</a>  </h3>
+<h3><a  name="13" href="#13">13</a>  </h3>
 <h2>Check you data using EdgeImpulse WASM (web Assembly Language) </h2>
 <br>
 Reminder: you would need an HTTPS web server such as github setup to use Gitpages.
@@ -306,7 +306,7 @@ Paste your RAW FEATURES that you copied from the "Live Classification" into the 
 
 <hr>
 
-<h3><a href="#14">14</a>  </h3>
+<h3><a name="14"  href="#14">14</a>  </h3>
 <h2>Check you data using Rocksetta index.html and EdgeImpulse WASM </h2>
 
 On your HTTPS webserver (I use gitpages) the "browser" folder you uploaded with the edgeImpulse WASM code, replace the index.html file with my (Twitter @Rocksetta) Javascript HTML WebCam Demo page That can be dowloaded at  [downloads/index.html](downloads/index.html)
@@ -325,7 +325,7 @@ On your HTTPS webserver (I use gitpages) the "browser" folder you uploaded with 
  
 
 <hr> 
-<h3><a href="#15">15</a>  </h3>
+<h3><a  name="15" href="#15">15</a>  </h3>
 <h2>End of presentation </h2>
 </div>
 
