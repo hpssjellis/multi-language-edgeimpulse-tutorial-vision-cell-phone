@@ -1,4 +1,4 @@
-Just a little hack here where I use a RAEDME.md file to past images so that the .html webpage files can use the image URL
+Just a little hack here where I use a README.md file to paste images so that the .html webpage files can use the image URL
 
 
 
