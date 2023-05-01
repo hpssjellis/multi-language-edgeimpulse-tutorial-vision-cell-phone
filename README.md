@@ -35,10 +35,10 @@ Just file an issue and send a link or the actual sound file.  IMPORTANT try to s
 A few Javascript abilites do not work, such as hiding the code. So all the Javascript not in buttons is below. 
 
 Note: 
-1. Old ML presentation [here](https://hpssjellis.github.io/my-robotics-machine-learning-teaching-lightning-talk-pecha-kucha/)
-2. Old TensorflowJS presentation [here](https://hpssjellis.github.io/lightening-talk-Pecha-Kucha-tensorflowjs/)
-3. Teacher Presentation Feedback [here](https://hpssjellis.github.io/jeremy-ellis-tinyML-teacher-feedback-2022/)
-4. Pecha Kucha template [here](https://github.com/hpssjellis/pecha-kucha-lightning-talks-template)
+1. Old ML presentation <a href="https://hpssjellis.github.io/my-robotics-machine-learning-teaching-lightning-talk-pecha-kucha/">here</a>
+2. Old TensorflowJS presentation <a href="https://hpssjellis.github.io/lightening-talk-Pecha-Kucha-tensorflowjs/">here</a>
+3. Teacher Presentation Feedback <a href="https://hpssjellis.github.io/jeremy-ellis-tinyML-teacher-feedback-2022/">here</a>
+4. Pecha Kucha template <a href="https://github.com/hpssjellis/pecha-kucha-lightning-talks-template">here</a>
 <br><br>
  
  ### Note when looking at the markdown none of the javascript buttons appear, you must go to your Gitpages Demo Link!
